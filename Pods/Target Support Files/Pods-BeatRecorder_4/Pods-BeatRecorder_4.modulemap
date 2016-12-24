@@ -1,0 +1,6 @@
+framework module Pods_BeatRecorder_4 {
+  umbrella header "Pods-BeatRecorder_4-umbrella.h"
+
+  export *
+  module * { export * }
+}

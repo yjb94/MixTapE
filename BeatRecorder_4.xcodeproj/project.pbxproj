@@ -1,0 +1,701 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D0395A31DE85E7E0037DCEC /* Raleway-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D0395911DE85E7E0037DCEC /* Raleway-Black.ttf */; };
+		4D0395A41DE85E7E0037DCEC /* Raleway-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D0395921DE85E7E0037DCEC /* Raleway-BlackItalic.ttf */; };
+		4D0395A51DE85E7E0037DCEC /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D0395931DE85E7E0037DCEC /* Raleway-Bold.ttf */; };
+		4D0395A61DE85E7E0037DCEC /* Raleway-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D0395941DE85E7E0037DCEC /* Raleway-BoldItalic.ttf */; };
+		4D0395A71DE85E7E0037DCEC /* Raleway-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D0395951DE85E7E0037DCEC /* Raleway-ExtraBold.ttf */; };
+		4D0395A81DE85E7E0037DCEC /* Raleway-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D0395961DE85E7E0037DCEC /* Raleway-ExtraBoldItalic.ttf */; };
+		4D0395A91DE85E7E0037DCEC /* Raleway-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D0395971DE85E7E0037DCEC /* Raleway-ExtraLight.ttf */; };
+		4D0395AA1DE85E7E0037DCEC /* Raleway-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D0395981DE85E7E0037DCEC /* Raleway-ExtraLightItalic.ttf */; };
+		4D0395AB1DE85E7E0037DCEC /* Raleway-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D0395991DE85E7E0037DCEC /* Raleway-Italic.ttf */; };
+		4D0395AC1DE85E7E0037DCEC /* Raleway-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D03959A1DE85E7E0037DCEC /* Raleway-Light.ttf */; };
+		4D0395AD1DE85E7E0037DCEC /* Raleway-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D03959B1DE85E7E0037DCEC /* Raleway-LightItalic.ttf */; };
+		4D0395AE1DE85E7E0037DCEC /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D03959C1DE85E7E0037DCEC /* Raleway-Medium.ttf */; };
+		4D0395AF1DE85E7E0037DCEC /* Raleway-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D03959D1DE85E7E0037DCEC /* Raleway-MediumItalic.ttf */; };
+		4D0395B01DE85E7E0037DCEC /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D03959E1DE85E7E0037DCEC /* Raleway-Regular.ttf */; };
+		4D0395B11DE85E7E0037DCEC /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D03959F1DE85E7E0037DCEC /* Raleway-SemiBold.ttf */; };
+		4D0395B21DE85E7E0037DCEC /* Raleway-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D0395A01DE85E7E0037DCEC /* Raleway-SemiBoldItalic.ttf */; };
+		4D0395B31DE85E7E0037DCEC /* Raleway-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D0395A11DE85E7E0037DCEC /* Raleway-Thin.ttf */; };
+		4D0395B41DE85E7E0037DCEC /* Raleway-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D0395A21DE85E7E0037DCEC /* Raleway-ThinItalic.ttf */; };
+		4D0395B61DE860F70037DCEC /* TabbarNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0395B51DE860F70037DCEC /* TabbarNavigationController.swift */; };
+		4D0395C41DE9FD090037DCEC /* AudioChartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0395C01DE9FD090037DCEC /* AudioChartTableViewCell.swift */; };
+		4D0395C51DE9FD090037DCEC /* AudioChartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0395C11DE9FD090037DCEC /* AudioChartTableViewController.swift */; };
+		4D0395C61DE9FD090037DCEC /* AudioChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0395C21DE9FD090037DCEC /* AudioChartViewController.swift */; };
+		4D0395C71DE9FD090037DCEC /* MiniAudioPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0395C31DE9FD090037DCEC /* MiniAudioPlayerViewController.swift */; };
+		4D0395D41DED08310037DCEC /* AudioDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0395D31DED08310037DCEC /* AudioDetailViewController.swift */; };
+		4D0395D81DEDB0B20037DCEC /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0395D71DEDB0B20037DCEC /* CustomSlider.swift */; };
+		4D0395DA1DF066F00037DCEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D0395D91DF066F00037DCEC /* Assets.xcassets */; };
+		4D0395DE1DF092AA0037DCEC /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0395DD1DF092AA0037DCEC /* RadioButton.swift */; };
+		4D3317751DD6293C00051D15 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3317741DD6293C00051D15 /* Audio.swift */; };
+		4D3317781DD62AF500051D15 /* AudioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3317771DD62AF500051D15 /* AudioController.swift */; };
+		4D3317A81DD62FCD00051D15 /* JoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3317A61DD62FCD00051D15 /* JoinViewController.swift */; };
+		4D3317A91DD62FCD00051D15 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3317A71DD62FCD00051D15 /* LoginViewController.swift */; };
+		4D3317AB1DD6343300051D15 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3317AA1DD6343300051D15 /* MainTabBarViewController.swift */; };
+		4D3317BA1DD6371F00051D15 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3317B21DD6371F00051D15 /* RecordViewController.swift */; };
+		4D3317BD1DD6371F00051D15 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3317B61DD6371F00051D15 /* SettingsViewController.swift */; };
+		4D38061A1DF875460000C728 /* Dispatcher.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D3806191DF875460000C728 /* Dispatcher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4D38061C1DFAD5410000C728 /* AudioMixer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D38061B1DFAD5410000C728 /* AudioMixer.swift */; };
+		4D38061E1DFB15FE0000C728 /* ArtistChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D38061D1DFB15FE0000C728 /* ArtistChartViewController.swift */; };
+		4D3806201DFB19550000C728 /* ArtistChartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D38061F1DFB19550000C728 /* ArtistChartTableViewCell.swift */; };
+		4D3806221DFB1CA60000C728 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3806211DFB1CA60000C728 /* User.swift */; };
+		4D3806241DFB1FEB0000C728 /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3806231DFB1FEB0000C728 /* Chart.swift */; };
+		4D38062A1DFBF9020000C728 /* ArtistInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3806281DFBF9020000C728 /* ArtistInfoViewController.swift */; };
+		4D38062B1DFBF9020000C728 /* ArtistProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3806291DFBF9020000C728 /* ArtistProfileViewController.swift */; };
+		4DDB91281DFE219B005A821F /* MusicChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDB91271DFE219B005A821F /* MusicChartViewController.swift */; };
+		4DDB912A1DFF0E3F005A821F /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDB91291DFF0E3F005A821F /* UploadViewController.swift */; };
+		4DFFF0851D98DD48006D7418 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFFF0841D98DD48006D7418 /* AppDelegate.swift */; };
+		4DFFF08A1D98DD48006D7418 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DFFF0881D98DD48006D7418 /* Main.storyboard */; };
+		4DFFF08D1D98DD48006D7418 /* BeatRecorder_4.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4DFFF08B1D98DD48006D7418 /* BeatRecorder_4.xcdatamodeld */; };
+		4DFFF0921D98DD48006D7418 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DFFF0901D98DD48006D7418 /* LaunchScreen.storyboard */; };
+		4DFFF09F1D9918F2006D7418 /* camoURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFFF09C1D9918F2006D7418 /* camoURL.swift */; };
+		4DFFF0A01D9918F2006D7418 /* HUDController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFFF09D1D9918F2006D7418 /* HUDController.swift */; };
+		4DFFF0A11D9918F2006D7418 /* SoundCloudLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFFF09E1D9918F2006D7418 /* SoundCloudLoader.swift */; };
+		4DFFF0A31D991CE5006D7418 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFFF0A21D991CE5006D7418 /* Utils.swift */; };
+		4DFFF0AA1D99EF9B006D7418 /* stdafx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFFF0A91D99EF9B006D7418 /* stdafx.swift */; };
+		6989F01B095FB7C4C08CB843 /* Pods_BeatRecorder_4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F05F928DF8FD53254DFB41C /* Pods_BeatRecorder_4.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4D3806181DF8751A0000C728 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4D38061A1DF875460000C728 /* Dispatcher.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4D0395911DE85E7E0037DCEC /* Raleway-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Black.ttf"; sourceTree = "<group>"; };
+		4D0395921DE85E7E0037DCEC /* Raleway-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-BlackItalic.ttf"; sourceTree = "<group>"; };
+		4D0395931DE85E7E0037DCEC /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Bold.ttf"; sourceTree = "<group>"; };
+		4D0395941DE85E7E0037DCEC /* Raleway-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-BoldItalic.ttf"; sourceTree = "<group>"; };
+		4D0395951DE85E7E0037DCEC /* Raleway-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraBold.ttf"; sourceTree = "<group>"; };
+		4D0395961DE85E7E0037DCEC /* Raleway-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		4D0395971DE85E7E0037DCEC /* Raleway-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraLight.ttf"; sourceTree = "<group>"; };
+		4D0395981DE85E7E0037DCEC /* Raleway-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		4D0395991DE85E7E0037DCEC /* Raleway-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Italic.ttf"; sourceTree = "<group>"; };
+		4D03959A1DE85E7E0037DCEC /* Raleway-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Light.ttf"; sourceTree = "<group>"; };
+		4D03959B1DE85E7E0037DCEC /* Raleway-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-LightItalic.ttf"; sourceTree = "<group>"; };
+		4D03959C1DE85E7E0037DCEC /* Raleway-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Medium.ttf"; sourceTree = "<group>"; };
+		4D03959D1DE85E7E0037DCEC /* Raleway-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-MediumItalic.ttf"; sourceTree = "<group>"; };
+		4D03959E1DE85E7E0037DCEC /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
+		4D03959F1DE85E7E0037DCEC /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBold.ttf"; sourceTree = "<group>"; };
+		4D0395A01DE85E7E0037DCEC /* Raleway-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		4D0395A11DE85E7E0037DCEC /* Raleway-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Thin.ttf"; sourceTree = "<group>"; };
+		4D0395A21DE85E7E0037DCEC /* Raleway-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ThinItalic.ttf"; sourceTree = "<group>"; };
+		4D0395B51DE860F70037DCEC /* TabbarNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabbarNavigationController.swift; path = RecordView/TabbarNavigationController.swift; sourceTree = "<group>"; };
+		4D0395C01DE9FD090037DCEC /* AudioChartTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioChartTableViewCell.swift; sourceTree = "<group>"; };
+		4D0395C11DE9FD090037DCEC /* AudioChartTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioChartTableViewController.swift; sourceTree = "<group>"; };
+		4D0395C21DE9FD090037DCEC /* AudioChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioChartViewController.swift; sourceTree = "<group>"; };
+		4D0395C31DE9FD090037DCEC /* MiniAudioPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiniAudioPlayerViewController.swift; sourceTree = "<group>"; };
+		4D0395D31DED08310037DCEC /* AudioDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioDetailViewController.swift; sourceTree = "<group>"; };
+		4D0395D71DEDB0B20037DCEC /* CustomSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
+		4D0395D91DF066F00037DCEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4D0395DD1DF092AA0037DCEC /* RadioButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RadioButton.swift; path = Classes/RadioButton.swift; sourceTree = "<group>"; };
+		4D3317741DD6293C00051D15 /* Audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Audio.swift; path = Classes/Audio.swift; sourceTree = "<group>"; };
+		4D3317771DD62AF500051D15 /* AudioController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AudioController.swift; path = Classes/AudioController.swift; sourceTree = "<group>"; };
+		4D3317A61DD62FCD00051D15 /* JoinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinViewController.swift; sourceTree = "<group>"; };
+		4D3317A71DD62FCD00051D15 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4D3317AA1DD6343300051D15 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		4D3317B21DD6371F00051D15 /* RecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
+		4D3317B61DD6371F00051D15 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		4D3806191DF875460000C728 /* Dispatcher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Dispatcher.framework; path = Carthage/Build/iOS/Dispatcher.framework; sourceTree = "<group>"; };
+		4D38061B1DFAD5410000C728 /* AudioMixer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AudioMixer.swift; path = Classes/AudioMixer.swift; sourceTree = "<group>"; };
+		4D38061D1DFB15FE0000C728 /* ArtistChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistChartViewController.swift; sourceTree = "<group>"; };
+		4D38061F1DFB19550000C728 /* ArtistChartTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistChartTableViewCell.swift; sourceTree = "<group>"; };
+		4D3806211DFB1CA60000C728 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Classes/User.swift; sourceTree = "<group>"; };
+		4D3806231DFB1FEB0000C728 /* Chart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Chart.swift; path = Classes/Chart.swift; sourceTree = "<group>"; };
+		4D3806281DFBF9020000C728 /* ArtistInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistInfoViewController.swift; sourceTree = "<group>"; };
+		4D3806291DFBF9020000C728 /* ArtistProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistProfileViewController.swift; sourceTree = "<group>"; };
+		4D4C5BDA1DF8742C006EA6F7 /* Dispatcher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Dispatcher.framework; path = Carthage/Build/iOS/Dispatcher.framework; sourceTree = "<group>"; };
+		4DDB91271DFE219B005A821F /* MusicChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicChartViewController.swift; sourceTree = "<group>"; };
+		4DDB91291DFF0E3F005A821F /* UploadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
+		4DFFF0811D98DD48006D7418 /* BeatRecorder_4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeatRecorder_4.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DFFF0841D98DD48006D7418 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4DFFF0891D98DD48006D7418 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4DFFF08C1D98DD48006D7418 /* BeatRecorder_4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BeatRecorder_4.xcdatamodel; sourceTree = "<group>"; };
+		4DFFF0911D98DD48006D7418 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4DFFF0931D98DD48006D7418 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DFFF09C1D9918F2006D7418 /* camoURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = camoURL.swift; sourceTree = "<group>"; };
+		4DFFF09D1D9918F2006D7418 /* HUDController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUDController.swift; sourceTree = "<group>"; };
+		4DFFF09E1D9918F2006D7418 /* SoundCloudLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundCloudLoader.swift; sourceTree = "<group>"; };
+		4DFFF0A21D991CE5006D7418 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		4DFFF0A91D99EF9B006D7418 /* stdafx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = stdafx.swift; sourceTree = "<group>"; };
+		936554E247C0516BFC96F815 /* Pods-BeatRecorder_4.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeatRecorder_4.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeatRecorder_4/Pods-BeatRecorder_4.release.xcconfig"; sourceTree = "<group>"; };
+		9F05F928DF8FD53254DFB41C /* Pods_BeatRecorder_4.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeatRecorder_4.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3F659DA17812507B9C1484A /* Pods-BeatRecorder_4.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeatRecorder_4.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeatRecorder_4/Pods-BeatRecorder_4.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4DFFF07E1D98DD48006D7418 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6989F01B095FB7C4C08CB843 /* Pods_BeatRecorder_4.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D0395901DE85E7E0037DCEC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4D0395911DE85E7E0037DCEC /* Raleway-Black.ttf */,
+				4D0395921DE85E7E0037DCEC /* Raleway-BlackItalic.ttf */,
+				4D0395931DE85E7E0037DCEC /* Raleway-Bold.ttf */,
+				4D0395941DE85E7E0037DCEC /* Raleway-BoldItalic.ttf */,
+				4D0395951DE85E7E0037DCEC /* Raleway-ExtraBold.ttf */,
+				4D0395961DE85E7E0037DCEC /* Raleway-ExtraBoldItalic.ttf */,
+				4D0395971DE85E7E0037DCEC /* Raleway-ExtraLight.ttf */,
+				4D0395981DE85E7E0037DCEC /* Raleway-ExtraLightItalic.ttf */,
+				4D0395991DE85E7E0037DCEC /* Raleway-Italic.ttf */,
+				4D03959A1DE85E7E0037DCEC /* Raleway-Light.ttf */,
+				4D03959B1DE85E7E0037DCEC /* Raleway-LightItalic.ttf */,
+				4D03959C1DE85E7E0037DCEC /* Raleway-Medium.ttf */,
+				4D03959D1DE85E7E0037DCEC /* Raleway-MediumItalic.ttf */,
+				4D03959E1DE85E7E0037DCEC /* Raleway-Regular.ttf */,
+				4D03959F1DE85E7E0037DCEC /* Raleway-SemiBold.ttf */,
+				4D0395A01DE85E7E0037DCEC /* Raleway-SemiBoldItalic.ttf */,
+				4D0395A11DE85E7E0037DCEC /* Raleway-Thin.ttf */,
+				4D0395A21DE85E7E0037DCEC /* Raleway-ThinItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		4D0395BF1DE9FD090037DCEC /* AudioChartView */ = {
+			isa = PBXGroup;
+			children = (
+				4D0395C21DE9FD090037DCEC /* AudioChartViewController.swift */,
+				4D0395C31DE9FD090037DCEC /* MiniAudioPlayerViewController.swift */,
+				4D0395C11DE9FD090037DCEC /* AudioChartTableViewController.swift */,
+				4D0395C01DE9FD090037DCEC /* AudioChartTableViewCell.swift */,
+				4D0395D31DED08310037DCEC /* AudioDetailViewController.swift */,
+			);
+			name = AudioChartView;
+			path = ../AudioChartView;
+			sourceTree = "<group>";
+		};
+		4D3317761DD6294500051D15 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4D3317741DD6293C00051D15 /* Audio.swift */,
+				4D3806211DFB1CA60000C728 /* User.swift */,
+				4D3806231DFB1FEB0000C728 /* Chart.swift */,
+				4D38061B1DFAD5410000C728 /* AudioMixer.swift */,
+				4D3317771DD62AF500051D15 /* AudioController.swift */,
+				4D0395D71DEDB0B20037DCEC /* CustomSlider.swift */,
+				4D0395DD1DF092AA0037DCEC /* RadioButton.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		4D3317791DD62D0E00051D15 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4D3317A51DD62FCD00051D15 /* LoginView */,
+				4D3317911DD62F5E00051D15 /* MainView */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4D3317911DD62F5E00051D15 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				4D0395B51DE860F70037DCEC /* TabbarNavigationController.swift */,
+				4D3317AA1DD6343300051D15 /* MainTabBarViewController.swift */,
+				4D0395BF1DE9FD090037DCEC /* AudioChartView */,
+				4D3806271DFBF9020000C728 /* ArtistView */,
+				4DDB91261DFE219B005A821F /* MusicView */,
+				4D3317AF1DD6371F00051D15 /* RecordView */,
+				4D3317B51DD6371F00051D15 /* SettingsView */,
+			);
+			name = MainView;
+			path = View/MainView;
+			sourceTree = "<group>";
+		};
+		4D3317A51DD62FCD00051D15 /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				4D3317A61DD62FCD00051D15 /* JoinViewController.swift */,
+				4D3317A71DD62FCD00051D15 /* LoginViewController.swift */,
+			);
+			name = LoginView;
+			path = View/LoginView;
+			sourceTree = "<group>";
+		};
+		4D3317AD1DD6371F00051D15 /* ChartView */ = {
+			isa = PBXGroup;
+			children = (
+				4D38061D1DFB15FE0000C728 /* ArtistChartViewController.swift */,
+				4D38061F1DFB19550000C728 /* ArtistChartTableViewCell.swift */,
+			);
+			name = ChartView;
+			path = ../ChartView;
+			sourceTree = "<group>";
+		};
+		4D3317AF1DD6371F00051D15 /* RecordView */ = {
+			isa = PBXGroup;
+			children = (
+				4D3317B21DD6371F00051D15 /* RecordViewController.swift */,
+				4DDB91291DFF0E3F005A821F /* UploadViewController.swift */,
+			);
+			path = RecordView;
+			sourceTree = "<group>";
+		};
+		4D3317B51DD6371F00051D15 /* SettingsView */ = {
+			isa = PBXGroup;
+			children = (
+				4D3317B61DD6371F00051D15 /* SettingsViewController.swift */,
+			);
+			path = SettingsView;
+			sourceTree = "<group>";
+		};
+		4D3806271DFBF9020000C728 /* ArtistView */ = {
+			isa = PBXGroup;
+			children = (
+				4D3317AD1DD6371F00051D15 /* ChartView */,
+				4D3806281DFBF9020000C728 /* ArtistInfoViewController.swift */,
+				4D3806291DFBF9020000C728 /* ArtistProfileViewController.swift */,
+			);
+			path = ArtistView;
+			sourceTree = "<group>";
+		};
+		4DDB91261DFE219B005A821F /* MusicView */ = {
+			isa = PBXGroup;
+			children = (
+				4DDB91271DFE219B005A821F /* MusicChartViewController.swift */,
+			);
+			path = MusicView;
+			sourceTree = "<group>";
+		};
+		4DFFF0781D98DD48006D7418 = {
+			isa = PBXGroup;
+			children = (
+				4D3806191DF875460000C728 /* Dispatcher.framework */,
+				4DFFF0831D98DD48006D7418 /* BeatRecorder_4 */,
+				4DFFF0821D98DD48006D7418 /* Products */,
+				AFEFEECC9EBD1EE438FD356A /* Pods */,
+				92FBD8102290A8F69A1EBFE3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4DFFF0821D98DD48006D7418 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4DFFF0811D98DD48006D7418 /* BeatRecorder_4.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4DFFF0831D98DD48006D7418 /* BeatRecorder_4 */ = {
+			isa = PBXGroup;
+			children = (
+				4D0395901DE85E7E0037DCEC /* Fonts */,
+				4D3317761DD6294500051D15 /* Classes */,
+				4D3317791DD62D0E00051D15 /* View */,
+				4DFFF09B1D9918F2006D7418 /* Library */,
+				4DFFF0841D98DD48006D7418 /* AppDelegate.swift */,
+				4DFFF0A91D99EF9B006D7418 /* stdafx.swift */,
+				4DFFF0881D98DD48006D7418 /* Main.storyboard */,
+				4D0395D91DF066F00037DCEC /* Assets.xcassets */,
+				4DFFF0901D98DD48006D7418 /* LaunchScreen.storyboard */,
+				4DFFF0931D98DD48006D7418 /* Info.plist */,
+				4DFFF08B1D98DD48006D7418 /* BeatRecorder_4.xcdatamodeld */,
+			);
+			path = BeatRecorder_4;
+			sourceTree = "<group>";
+		};
+		4DFFF09B1D9918F2006D7418 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				4DFFF09C1D9918F2006D7418 /* camoURL.swift */,
+				4DFFF09D1D9918F2006D7418 /* HUDController.swift */,
+				4DFFF09E1D9918F2006D7418 /* SoundCloudLoader.swift */,
+				4DFFF0A21D991CE5006D7418 /* Utils.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		92FBD8102290A8F69A1EBFE3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D4C5BDA1DF8742C006EA6F7 /* Dispatcher.framework */,
+				9F05F928DF8FD53254DFB41C /* Pods_BeatRecorder_4.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AFEFEECC9EBD1EE438FD356A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F3F659DA17812507B9C1484A /* Pods-BeatRecorder_4.debug.xcconfig */,
+				936554E247C0516BFC96F815 /* Pods-BeatRecorder_4.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4DFFF0801D98DD48006D7418 /* BeatRecorder_4 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DFFF0961D98DD48006D7418 /* Build configuration list for PBXNativeTarget "BeatRecorder_4" */;
+			buildPhases = (
+				527A2E7715DF20AC083B5343 /* [CP] Check Pods Manifest.lock */,
+				4DFFF07D1D98DD48006D7418 /* Sources */,
+				4DFFF07E1D98DD48006D7418 /* Frameworks */,
+				4DFFF07F1D98DD48006D7418 /* Resources */,
+				492643CB374C80383F6939DC /* [CP] Embed Pods Frameworks */,
+				76E0D81473C2BB3FE29EF6D3 /* [CP] Copy Pods Resources */,
+				4D3806181DF8751A0000C728 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BeatRecorder_4;
+			productName = BeatRecorder_4;
+			productReference = 4DFFF0811D98DD48006D7418 /* BeatRecorder_4.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4DFFF0791D98DD48006D7418 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Camo_u;
+				TargetAttributes = {
+					4DFFF0801D98DD48006D7418 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 4DFFF07C1D98DD48006D7418 /* Build configuration list for PBXProject "BeatRecorder_4" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4DFFF0781D98DD48006D7418;
+			productRefGroup = 4DFFF0821D98DD48006D7418 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4DFFF0801D98DD48006D7418 /* BeatRecorder_4 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4DFFF07F1D98DD48006D7418 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D0395A71DE85E7E0037DCEC /* Raleway-ExtraBold.ttf in Resources */,
+				4D0395B21DE85E7E0037DCEC /* Raleway-SemiBoldItalic.ttf in Resources */,
+				4D0395A31DE85E7E0037DCEC /* Raleway-Black.ttf in Resources */,
+				4D0395B01DE85E7E0037DCEC /* Raleway-Regular.ttf in Resources */,
+				4D0395DA1DF066F00037DCEC /* Assets.xcassets in Resources */,
+				4D0395AA1DE85E7E0037DCEC /* Raleway-ExtraLightItalic.ttf in Resources */,
+				4D0395B31DE85E7E0037DCEC /* Raleway-Thin.ttf in Resources */,
+				4D0395AD1DE85E7E0037DCEC /* Raleway-LightItalic.ttf in Resources */,
+				4D0395A91DE85E7E0037DCEC /* Raleway-ExtraLight.ttf in Resources */,
+				4D0395A51DE85E7E0037DCEC /* Raleway-Bold.ttf in Resources */,
+				4DFFF0921D98DD48006D7418 /* LaunchScreen.storyboard in Resources */,
+				4D0395AE1DE85E7E0037DCEC /* Raleway-Medium.ttf in Resources */,
+				4D0395B41DE85E7E0037DCEC /* Raleway-ThinItalic.ttf in Resources */,
+				4D0395B11DE85E7E0037DCEC /* Raleway-SemiBold.ttf in Resources */,
+				4D0395A61DE85E7E0037DCEC /* Raleway-BoldItalic.ttf in Resources */,
+				4D0395A41DE85E7E0037DCEC /* Raleway-BlackItalic.ttf in Resources */,
+				4D0395AC1DE85E7E0037DCEC /* Raleway-Light.ttf in Resources */,
+				4DFFF08A1D98DD48006D7418 /* Main.storyboard in Resources */,
+				4D0395AF1DE85E7E0037DCEC /* Raleway-MediumItalic.ttf in Resources */,
+				4D0395AB1DE85E7E0037DCEC /* Raleway-Italic.ttf in Resources */,
+				4D0395A81DE85E7E0037DCEC /* Raleway-ExtraBoldItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		492643CB374C80383F6939DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeatRecorder_4/Pods-BeatRecorder_4-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		527A2E7715DF20AC083B5343 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		76E0D81473C2BB3FE29EF6D3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeatRecorder_4/Pods-BeatRecorder_4-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4DFFF07D1D98DD48006D7418 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D0395D81DEDB0B20037DCEC /* CustomSlider.swift in Sources */,
+				4D38062B1DFBF9020000C728 /* ArtistProfileViewController.swift in Sources */,
+				4D0395C61DE9FD090037DCEC /* AudioChartViewController.swift in Sources */,
+				4D3317781DD62AF500051D15 /* AudioController.swift in Sources */,
+				4DFFF08D1D98DD48006D7418 /* BeatRecorder_4.xcdatamodeld in Sources */,
+				4D3317BA1DD6371F00051D15 /* RecordViewController.swift in Sources */,
+				4D3806221DFB1CA60000C728 /* User.swift in Sources */,
+				4D0395C41DE9FD090037DCEC /* AudioChartTableViewCell.swift in Sources */,
+				4D3317BD1DD6371F00051D15 /* SettingsViewController.swift in Sources */,
+				4DFFF0A01D9918F2006D7418 /* HUDController.swift in Sources */,
+				4D38061C1DFAD5410000C728 /* AudioMixer.swift in Sources */,
+				4DDB91281DFE219B005A821F /* MusicChartViewController.swift in Sources */,
+				4D3317751DD6293C00051D15 /* Audio.swift in Sources */,
+				4D0395D41DED08310037DCEC /* AudioDetailViewController.swift in Sources */,
+				4DFFF0AA1D99EF9B006D7418 /* stdafx.swift in Sources */,
+				4D38061E1DFB15FE0000C728 /* ArtistChartViewController.swift in Sources */,
+				4DFFF0A11D9918F2006D7418 /* SoundCloudLoader.swift in Sources */,
+				4D38062A1DFBF9020000C728 /* ArtistInfoViewController.swift in Sources */,
+				4DFFF0A31D991CE5006D7418 /* Utils.swift in Sources */,
+				4D3806201DFB19550000C728 /* ArtistChartTableViewCell.swift in Sources */,
+				4DFFF0851D98DD48006D7418 /* AppDelegate.swift in Sources */,
+				4D0395DE1DF092AA0037DCEC /* RadioButton.swift in Sources */,
+				4D3317A81DD62FCD00051D15 /* JoinViewController.swift in Sources */,
+				4D0395C51DE9FD090037DCEC /* AudioChartTableViewController.swift in Sources */,
+				4DDB912A1DFF0E3F005A821F /* UploadViewController.swift in Sources */,
+				4D3317AB1DD6343300051D15 /* MainTabBarViewController.swift in Sources */,
+				4DFFF09F1D9918F2006D7418 /* camoURL.swift in Sources */,
+				4D3806241DFB1FEB0000C728 /* Chart.swift in Sources */,
+				4D0395B61DE860F70037DCEC /* TabbarNavigationController.swift in Sources */,
+				4D3317A91DD62FCD00051D15 /* LoginViewController.swift in Sources */,
+				4D0395C71DE9FD090037DCEC /* MiniAudioPlayerViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4DFFF0881D98DD48006D7418 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DFFF0891D98DD48006D7418 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4DFFF0901D98DD48006D7418 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DFFF0911D98DD48006D7418 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4DFFF0941D98DD48006D7418 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4DFFF0951D98DD48006D7418 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4DFFF0971D98DD48006D7418 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3F659DA17812507B9C1484A /* Pods-BeatRecorder_4.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = BeatRecorder_4/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.camou.BeatRecorder-4";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4DFFF0981D98DD48006D7418 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 936554E247C0516BFC96F815 /* Pods-BeatRecorder_4.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = BeatRecorder_4/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.camou.BeatRecorder-4";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4DFFF07C1D98DD48006D7418 /* Build configuration list for PBXProject "BeatRecorder_4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DFFF0941D98DD48006D7418 /* Debug */,
+				4DFFF0951D98DD48006D7418 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DFFF0961D98DD48006D7418 /* Build configuration list for PBXNativeTarget "BeatRecorder_4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DFFF0971D98DD48006D7418 /* Debug */,
+				4DFFF0981D98DD48006D7418 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4DFFF08B1D98DD48006D7418 /* BeatRecorder_4.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4DFFF08C1D98DD48006D7418 /* BeatRecorder_4.xcdatamodel */,
+			);
+			currentVersion = 4DFFF08C1D98DD48006D7418 /* BeatRecorder_4.xcdatamodel */;
+			path = BeatRecorder_4.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4DFFF0791D98DD48006D7418 /* Project object */;
+}

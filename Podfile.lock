@@ -1,0 +1,27 @@
+PODS:
+  - Alamofire (3.4.1)
+  - HanekeSwift (0.10.1)
+  - JGProgressHUD (1.4)
+  - NVActivityIndicatorView (2.10)
+  - TheAmazingAudioEngine (1.5.6)
+  - Toucan (0.5.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - HanekeSwift
+  - JGProgressHUD
+  - NVActivityIndicatorView
+  - TheAmazingAudioEngine
+  - Toucan
+
+SPEC CHECKSUMS:
+  Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
+  HanekeSwift: 08e47d3d0f2899ec58e5d257beba0de619aca9e8
+  JGProgressHUD: 1617b0940cf80bb53e8f7d6f0fd69252ea45d6d4
+  NVActivityIndicatorView: 5568608c3511690a42c4dd02f7a1de4361d670ae
+  TheAmazingAudioEngine: 0ed8c05486646373a48b22a341d31de42d1af2c3
+  Toucan: 0519c341148252ae114c5a657d2a85bb9ada9e40
+
+PODFILE CHECKSUM: a83fa699e95db7771ee7a06190655f4e24bfef12
+
+COCOAPODS: 1.0.1
