@@ -16,11 +16,11 @@ class TabbarNavigationController : UINavigationController
         self.navigationBar.barTintColor = UIColor.init(red: 0, green: 178, blue: 178)
         
         //set nav bar text datas
-        let titleDict: NSDictionary = [NSForegroundColorAttributeName: UIColor.whiteColor(), NSFontAttributeName: UIFont(name: "Raleway", size: 20)!]
+        let titleDict: NSDictionary = [NSForegroundColorAttributeName: UIColor.white, NSFontAttributeName: UIFont(name: "Raleway", size: 20)!]
         self.navigationBar.titleTextAttributes = titleDict as? [String : AnyObject]
     }
     
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return UIStatusBarStyle.LightContent
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
     }
 }

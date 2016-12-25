@@ -23,11 +23,11 @@ class AudioChartTableViewCell: UITableViewCell
     {
         super.awakeFromNib()
         
-        self.layoutMargins = UIEdgeInsetsZero
-        self.separatorInset = UIEdgeInsetsZero
+        self.layoutMargins = UIEdgeInsets.zero
+        self.separatorInset = UIEdgeInsets.zero
     }
     
-    override func setSelected(selected: Bool, animated: Bool)
+    override func setSelected(_ selected: Bool, animated: Bool)
     {
         super.setSelected(selected, animated: animated)
     }

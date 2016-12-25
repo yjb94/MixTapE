@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -41,7 +41,6 @@
 		4D3317AB1DD6343300051D15 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3317AA1DD6343300051D15 /* MainTabBarViewController.swift */; };
 		4D3317BA1DD6371F00051D15 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3317B21DD6371F00051D15 /* RecordViewController.swift */; };
 		4D3317BD1DD6371F00051D15 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3317B61DD6371F00051D15 /* SettingsViewController.swift */; };
-		4D38061A1DF875460000C728 /* Dispatcher.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D3806191DF875460000C728 /* Dispatcher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4D38061C1DFAD5410000C728 /* AudioMixer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D38061B1DFAD5410000C728 /* AudioMixer.swift */; };
 		4D38061E1DFB15FE0000C728 /* ArtistChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D38061D1DFB15FE0000C728 /* ArtistChartViewController.swift */; };
 		4D3806201DFB19550000C728 /* ArtistChartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D38061F1DFB19550000C728 /* ArtistChartTableViewCell.swift */; };
@@ -62,19 +61,6 @@
 		4DFFF0AA1D99EF9B006D7418 /* stdafx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFFF0A91D99EF9B006D7418 /* stdafx.swift */; };
 		6989F01B095FB7C4C08CB843 /* Pods_BeatRecorder_4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F05F928DF8FD53254DFB41C /* Pods_BeatRecorder_4.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		4D3806181DF8751A0000C728 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				4D38061A1DF875460000C728 /* Dispatcher.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4D0395911DE85E7E0037DCEC /* Raleway-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Black.ttf"; sourceTree = "<group>"; };
@@ -360,7 +346,6 @@
 				4DFFF07F1D98DD48006D7418 /* Resources */,
 				492643CB374C80383F6939DC /* [CP] Embed Pods Frameworks */,
 				76E0D81473C2BB3FE29EF6D3 /* [CP] Copy Pods Resources */,
-				4D3806181DF8751A0000C728 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -378,16 +363,17 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Camo_u;
 				TargetAttributes = {
 					4DFFF0801D98DD48006D7418 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0820;
 					};
 				};
 			};
 			buildConfigurationList = 4DFFF07C1D98DD48006D7418 /* Build configuration list for PBXProject "BeatRecorder_4" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -558,8 +544,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -604,8 +592,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -624,6 +614,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -642,6 +633,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.camou.BeatRecorder-4";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -658,6 +650,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.camou.BeatRecorder-4";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

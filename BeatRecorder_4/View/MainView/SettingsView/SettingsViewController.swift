@@ -27,25 +27,25 @@ class SettingsViewController: UIViewController
         // Dispose of any resources that can be recreated.
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
-        super.prepareForSegue(segue, sender: sender)
+        super.prepare(for: segue, sender: sender)
         
         let segueName = segue.identifier
         if segueName == "ArtistProfileSegue"
         {
             //set to loginned user
-            (segue.destinationViewController as! ArtistProfileViewController).artist_data = USER_DATA.user as! Artist
+            (segue.destination as! ArtistProfileViewController).artist_data = USER_DATA.user as! Artist
         }
     }
     
-    @IBAction func onAutoLoginOnOff(sender: AnyObject)
+    @IBAction func onAutoLoginOnOff(_ sender: AnyObject)
     {
         USER_DATA.auto_login = (USER_DATA.auto_login == "TRUE") ? "FALSE" : "TRUE"
         onoff_label.text = (USER_DATA.auto_login == "TRUE") ? "OFF" : "ON"
 
         let cache = Shared.dataCache
-        cache.set(value: USER_DATA.auto_login.dataUsingEncoding(NSUTF8StringEncoding)!, key: USER_DATA.AUTO_LOGIN_KEY)
+        cache.set(value: USER_DATA.auto_login.data(using: String.Encoding.utf8)!, key: USER_DATA.AUTO_LOGIN_KEY)
     }
 
 }

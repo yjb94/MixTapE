@@ -26,18 +26,18 @@ class ArtistProfileViewController: UIViewController
         super.viewDidLoad()
         
         //set view datas
-        profile_image.hnk_setImageFromURL(NSURL(string: artist_data.profile_url)!, placeholder: nil, format: nil, failure: nil) { data in
+        profile_image.hnk_setImageFromURL(URL(string: artist_data.profile_url)!, placeholder: nil, format: nil, failure: nil) { data in
             //after loading
             //set profile
             self.profile_image.image = data
             self.profile_image.layer.borderWidth = 1.0
             self.profile_image.layer.masksToBounds = false
-            self.profile_image.layer.borderColor = UIColor.clearColor().CGColor
+            self.profile_image.layer.borderColor = UIColor.clear.cgColor
             self.profile_image.layer.cornerRadius = self.profile_image.frame.width/2
             self.profile_image.clipsToBounds = true
         }
         
-        cover_image.hnk_setImageFromURL(NSURL(string: artist_data.thumbnail_url)!, placeholder: nil, format: nil, failure: nil) { data in
+        cover_image.hnk_setImageFromURL(URL(string: artist_data.thumbnail_url)!, placeholder: nil, format: nil, failure: nil) { data in
             //after loading
             //set profile
             self.cover_image.image = Toucan(image: data).resizeByCropping(CGSize(width: 600, height: 172)).image
@@ -49,19 +49,19 @@ class ArtistProfileViewController: UIViewController
         
         artist_label.text = artist_data.name
         
-        mixtape_cnt.setTitle(String(artist_data.mixtape_cnt), forState: .Normal)
-        follwer_cnt.setTitle(String(artist_data.follwer_cnt), forState: .Normal)
-        following_cnt.setTitle(String(artist_data.follwings_cnt), forState: .Normal)
+        mixtape_cnt.setTitle(String(artist_data.mixtape_cnt), for: UIControlState())
+        follwer_cnt.setTitle(String(artist_data.follwer_cnt), for: UIControlState())
+        following_cnt.setTitle(String(artist_data.follwings_cnt), for: UIControlState())
         
         if(artist_data.seq == USER_DATA.user.seq)
         {
-            following_cnt.enabled = false
+            following_cnt.isEnabled = false
         }
     }
     
-    override func preferredStatusBarStyle() -> UIStatusBarStyle
+    override var preferredStatusBarStyle : UIStatusBarStyle
     {
-        return UIStatusBarStyle.LightContent
+        return UIStatusBarStyle.lightContent
     }
     
     override func didReceiveMemoryWarning()
@@ -69,17 +69,17 @@ class ArtistProfileViewController: UIViewController
         super.didReceiveMemoryWarning()
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
     }
-    @IBAction func onViewMixtape(sender: AnyObject)
+    @IBAction func onViewMixtape(_ sender: AnyObject)
     {
     }
-    @IBAction func onFollowerClick(sender: AnyObject)
+    @IBAction func onFollowerClick(_ sender: AnyObject)
     {
     }
-    @IBAction func onFollowingClick(sender: AnyObject)
+    @IBAction func onFollowingClick(_ sender: AnyObject)
     {
-        following_cnt.setTitle(String(artist_data.follwings_cnt+1), forState: .Normal)
+        following_cnt.setTitle(String(artist_data.follwings_cnt+1), for: UIControlState())
     }
 }

@@ -35,17 +35,17 @@ class Chart
         return 0
     }
     
-    func addAudio(audio:Audio)
+    func addAudio(_ audio:Audio)
     {
         audio_data_list.append(audio)
     }
     
-    func addUser(user:User)
+    func addUser(_ user:User)
     {
         user_data_list.append(user)
     }
     
-    func getAudioDataAt(index:Int) -> Audio
+    func getAudioDataAt(_ index:Int) -> Audio
     {
         if getChartLength() >= index
         {
@@ -54,7 +54,7 @@ class Chart
         return Audio()
     }
     
-    func getUserDataAt(index:Int) -> User!
+    func getUserDataAt(_ index:Int) -> User!
     {
         if getChartLength() >= index
         {

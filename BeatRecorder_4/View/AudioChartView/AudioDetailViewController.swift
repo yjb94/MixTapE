@@ -39,13 +39,13 @@ class AudioDetailViewController: UIViewController
         
         if audio_data == nil
         {
-            self.dismissViewControllerAnimated(false, completion: nil)
+            self.dismiss(animated: false, completion: nil)
             return
         }
         
         if chart_type == 1 || chart_type == 2
         {
-            select_button.hidden = true
+            select_button.isHidden = true
         }
         
         //label setting
@@ -53,10 +53,10 @@ class AudioDetailViewController: UIViewController
         title_label.adjustsFontSizeToFitWidth = true
         
         artist_label.text = audio_data.artist
-        star_button.setTitle(String(audio_data.like_cnt) + " LIKES", forState: .Normal)
+        star_button.setTitle(String(audio_data.like_cnt) + " LIKES", for: UIControlState())
         
         //image setting
-        let url = NSURL(string: audio_data.artwork_url)
+        let url = URL(string: audio_data.artwork_url)
         artwork_image_view.hnk_setImageFromURL(url!, placeholder: nil, format: nil, failure: nil) { data in
             //after loading
             //set artwork
@@ -65,7 +65,7 @@ class AudioDetailViewController: UIViewController
         
         self.bg_image_view.hnk_setImageFromURL(url!, placeholder: nil, format: nil, failure: nil) { data in
             //set artwork bg
-            self.bg_image_view.image =  Toucan(image:data).resize(CGSize(width: self.view.bounds.width, height: self.view.bounds.height), fitMode: Toucan.Resize.FitMode.Crop).image
+            self.bg_image_view.image =  Toucan(image:data).resize(CGSize(width: self.view.bounds.width, height: self.view.bounds.height), fitMode: Toucan.Resize.FitMode.crop).image
             
             let overlay = UIView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: self.view.bounds.height))
             overlay.backgroundColor = UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.7)
@@ -76,36 +76,36 @@ class AudioDetailViewController: UIViewController
         var frame = lyrics_label.frame
         frame.size.height = 40
         
-        if UIDevice.currentDevice().modelName == "iPhone 5" ||
-         UIDevice.currentDevice().modelName == "iPhone 5c" ||
-         UIDevice.currentDevice().modelName == "iPhone 5s"
+        if UIDevice.current.modelName == "iPhone 5" ||
+         UIDevice.current.modelName == "iPhone 5c" ||
+         UIDevice.current.modelName == "iPhone 5s"
         {
             lyrics_label.numberOfLines = 4
         }
-        if UIDevice.currentDevice().modelName == "iPhone 6" ||
-            UIDevice.currentDevice().modelName == "iPhone 6s" ||
-            UIDevice.currentDevice().modelName == "iPhone SE" ||
-            UIDevice.currentDevice().modelName == "iPhone 7"
+        if UIDevice.current.modelName == "iPhone 6" ||
+            UIDevice.current.modelName == "iPhone 6s" ||
+            UIDevice.current.modelName == "iPhone SE" ||
+            UIDevice.current.modelName == "iPhone 7"
         {
             lyrics_label.numberOfLines = 8
         }
-        if UIDevice.currentDevice().modelName == "iPhone 6 Plus" ||
-            UIDevice.currentDevice().modelName == "iPhone 6s Plus" ||
-            UIDevice.currentDevice().modelName == "iPhone 7 Plus"
+        if UIDevice.current.modelName == "iPhone 6 Plus" ||
+            UIDevice.current.modelName == "iPhone 6s Plus" ||
+            UIDevice.current.modelName == "iPhone 7 Plus"
         {
             lyrics_label.numberOfLines = 8
         }
         
         lyrics_label.frame = frame
         lyrics_label.text = audio_data.description
-        lyrics_label.lineBreakMode = .ByWordWrapping
+        lyrics_label.lineBreakMode = .byWordWrapping
         
         //play audio
         if audio_key == ""
         {
             AudioController.sharedInstance.playAudioWith(audio_data, callback: { key in
                 self.audio_key = key
-                self.playpause_button.setImage(UIImage(named:"detail_view_pause_button.png"),forState:UIControlState.Normal)
+                self.playpause_button.setImage(UIImage(named:"detail_view_pause_button.png"),for:UIControlState())
                 self.setPlayback()
             })
         }
@@ -115,7 +115,7 @@ class AudioDetailViewController: UIViewController
         }
     }
     
-    override func viewWillAppear(animated: Bool)
+    override func viewWillAppear(_ animated: Bool)
     {
         super.viewWillAppear(animated)
         
@@ -123,11 +123,11 @@ class AudioDetailViewController: UIViewController
         
         if(is_playing)
         {
-            playpause_button.setImage(UIImage(named:"detail_view_pause_button.png"),forState:UIControlState.Normal)
+            playpause_button.setImage(UIImage(named:"detail_view_pause_button.png"),for:UIControlState())
         }
         else
         {
-            playpause_button.setImage(UIImage(named:"detail_view_play_button.png"),forState:UIControlState.Normal)
+            playpause_button.setImage(UIImage(named:"detail_view_play_button.png"),for:UIControlState())
         }
     }
     
@@ -138,7 +138,7 @@ class AudioDetailViewController: UIViewController
         playback_slider.minimumValue = 0
         playback_slider.maximumValue = Float(AudioController.sharedInstance.getAudioDuration(audio_key))
         playback_slider.value = Float(AudioController.sharedInstance.getAudioCurrentTime(audio_key))
-        playback_slider.addTarget(self, action: #selector(AudioDetailViewController.sliderValueChanged(_:)), forControlEvents: .ValueChanged)
+        playback_slider.addTarget(self, action: #selector(AudioDetailViewController.sliderValueChanged(_:)), for: .valueChanged)
         
         //cur time
         cur_time_label.text = String(Utils.secondToMMSS(Int(AudioController.sharedInstance.getAudioCurrentTime(audio_key))))
@@ -148,16 +148,16 @@ class AudioDetailViewController: UIViewController
         
         //set thumb
         let thumb_img = UIImage(named: "playback_thumb.png")!
-        playback_slider.setThumbImage(Toucan(image:thumb_img).resize(CGSize(width: 15, height: 15), fitMode: Toucan.Resize.FitMode.Scale).image, forState: .Normal)
+        playback_slider.setThumbImage(Toucan(image:thumb_img).resize(CGSize(width: 15, height: 15), fitMode: Toucan.Resize.FitMode.scale).image, for: .normal)
         
         //playback 용 타이머
-        let loop_timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(AudioDetailViewController.progressTimer), userInfo: nil, repeats: true)
-        NSRunLoop.currentRunLoop().addTimer(loop_timer, forMode: NSRunLoopCommonModes)
+        let loop_timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(AudioDetailViewController.progressTimer), userInfo: nil, repeats: true)
+        RunLoop.current.add(loop_timer, forMode: RunLoopMode.commonModes)
     }
     
-    override func preferredStatusBarStyle() -> UIStatusBarStyle
+    override var preferredStatusBarStyle : UIStatusBarStyle
     {
-        return UIStatusBarStyle.LightContent
+        return UIStatusBarStyle.lightContent
     }
     
     override func didReceiveMemoryWarning()
@@ -165,13 +165,13 @@ class AudioDetailViewController: UIViewController
         super.didReceiveMemoryWarning()
     }
     
-    func sliderValueChanged(sender:UISlider)
+    func sliderValueChanged(_ sender:UISlider)
     {
         if audio_key == ""
         {
             return
         }
-        AudioController.sharedInstance.audioAtTime(NSTimeInterval(sender.value), key: audio_key)
+        AudioController.sharedInstance.audioAtTime(TimeInterval(sender.value), key: audio_key)
         AudioController.sharedInstance.play(true, key: audio_key)
         cur_time_label.text = String(Utils.secondToMMSS(Int(AudioController.sharedInstance.getAudioCurrentTime(audio_key))))
     }
@@ -191,7 +191,7 @@ class AudioDetailViewController: UIViewController
         }
     }
     
-    @IBAction func onCloseClicked(sender: UIButton)
+    @IBAction func onCloseClicked(_ sender: UIButton)
     {
         if chart_type == 0 //if mixtape beat chart
         {
@@ -219,37 +219,37 @@ class AudioDetailViewController: UIViewController
             music_chart_view_controller.appearAnimated()
         }
         
-        self.dismissViewControllerAnimated(true, completion:{
+        self.dismiss(animated: true, completion:{
         })
     }
     
-    @IBAction func onPlayPauseClick(sender: AnyObject)
+    @IBAction func onPlayPauseClick(_ sender: AnyObject)
     {
         is_playing = AudioController.sharedInstance.playPause(audio_key)
         
         if(is_playing)
         {
-            playpause_button.setImage(UIImage(named:"detail_view_pause_button.png"),forState:UIControlState.Normal)
+            playpause_button.setImage(UIImage(named:"detail_view_pause_button.png"),for:UIControlState())
         }
         else
         {
-            playpause_button.setImage(UIImage(named:"detail_view_play_button.png"),forState:UIControlState.Normal)
+            playpause_button.setImage(UIImage(named:"detail_view_play_button.png"),for:UIControlState())
         }
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
         if segue.identifier == "showRecordView"
         {
             //set data
-            let audioDetailViewController = (segue.destinationViewController as! RecordViewController)
+            let audioDetailViewController = (segue.destination as! RecordViewController)
             //set audio data
             audioDetailViewController.audio_data = self.audio_data
             audioDetailViewController.audio_key = audio_key
         }
     }
-    @IBAction func onLikeClicked(sender: AnyObject)
+    @IBAction func onLikeClicked(_ sender: AnyObject)
     {
-        star_button.setTitle(String(audio_data.like_cnt+1) + " LIKES", forState: .Normal)
+        star_button.setTitle(String(audio_data.like_cnt+1) + " LIKES", for: UIControlState())
     }
 }

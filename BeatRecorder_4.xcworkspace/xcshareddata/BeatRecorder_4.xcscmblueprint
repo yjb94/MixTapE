@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8CB6B724DCF293FF460F401D7997C9DB26BBD331",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8CB6B724DCF293FF460F401D7997C9DB26BBD331" : 9223372036854775807,
+    "37DC95545EE3804F88CB40D78E314DFD3EBD0B8B" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "05365626-0998-456F-BD78-AAF792AFFC6D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8CB6B724DCF293FF460F401D7997C9DB26BBD331" : "BeatRecorder_4\/",
+    "37DC95545EE3804F88CB40D78E314DFD3EBD0B8B" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "BeatRecorder_4",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "BeatRecorder_4.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/yjb94\/MyXcodeProjects.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "37DC95545EE3804F88CB40D78E314DFD3EBD0B8B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/yjb94\/MixTapE.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8CB6B724DCF293FF460F401D7997C9DB26BBD331"
+    }
+  ]
+}

@@ -1,81 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <mutableArray key="Raleway-ExtraLight.ttf">
+        <array key="Raleway-ExtraLight.ttf">
             <string>Raleway-ExtraLight</string>
-            <string>Raleway-ExtraLight</string>
-            <string>Raleway-ExtraLight</string>
-            <string>Raleway-ExtraLight</string>
-            <string>Raleway-ExtraLight</string>
-            <string>Raleway-ExtraLight</string>
-            <string>Raleway-ExtraLight</string>
-            <string>Raleway-ExtraLight</string>
-            <string>Raleway-ExtraLight</string>
-            <string>Raleway-ExtraLight</string>
-        </mutableArray>
-        <mutableArray key="Raleway-Light.ttf">
+        </array>
+        <array key="Raleway-Light.ttf">
             <string>Raleway-Light</string>
-            <string>Raleway-Light</string>
-        </mutableArray>
-        <mutableArray key="Raleway-Regular.ttf">
+        </array>
+        <array key="Raleway-Regular.ttf">
             <string>Raleway-Regular</string>
-            <string>Raleway-Regular</string>
-            <string>Raleway-Regular</string>
-            <string>Raleway-Regular</string>
-            <string>Raleway-Regular</string>
-            <string>Raleway-Regular</string>
-            <string>Raleway-Regular</string>
-            <string>Raleway-Regular</string>
-            <string>Raleway-Regular</string>
-            <string>Raleway-Regular</string>
-            <string>Raleway-Regular</string>
-            <string>Raleway-Regular</string>
-            <string>Raleway-Regular</string>
-            <string>Raleway-Regular</string>
-            <string>Raleway-Regular</string>
-            <string>Raleway-Regular</string>
-            <string>Raleway-Regular</string>
-            <string>Raleway-Regular</string>
-            <string>Raleway-Regular</string>
-            <string>Raleway-Regular</string>
-            <string>Raleway-Regular</string>
-            <string>Raleway-Regular</string>
-            <string>Raleway-Regular</string>
-            <string>Raleway-Regular</string>
-            <string>Raleway-Regular</string>
-            <string>Raleway-Regular</string>
-            <string>Raleway-Regular</string>
-            <string>Raleway-Regular</string>
-            <string>Raleway-Regular</string>
-            <string>Raleway-Regular</string>
-            <string>Raleway-Regular</string>
-            <string>Raleway-Regular</string>
-            <string>Raleway-Regular</string>
-            <string>Raleway-Regular</string>
-            <string>Raleway-Regular</string>
-            <string>Raleway-Regular</string>
-            <string>Raleway-Regular</string>
-            <string>Raleway-Regular</string>
-            <string>Raleway-Regular</string>
-            <string>Raleway-Regular</string>
-            <string>Raleway-Regular</string>
-            <string>Raleway-Regular</string>
-            <string>Raleway-Regular</string>
-            <string>Raleway-Regular</string>
-            <string>Raleway-Regular</string>
-            <string>Raleway-Regular</string>
-            <string>Raleway-Regular</string>
-            <string>Raleway-Regular</string>
-            <string>Raleway-Regular</string>
-            <string>Raleway-Regular</string>
-        </mutableArray>
+        </array>
     </customFonts>
     <scenes>
         <!--Login View Controller-->
@@ -87,104 +32,104 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBF-yZ-RBE">
-                                <rect key="frame" x="40" y="561" width="97" height="27"/>
+                                <rect key="frame" x="36" y="628" width="97" height="27"/>
                                 <fontDescription key="fontDescription" name="Raleway-ExtraLight" family="Raleway" pointSize="12"/>
                                 <state key="normal" title="Forgot password?">
-                                    <color key="titleColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="onForgotPasswordClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iwG-vB-KrR"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_bg" translatesAutoresizingMaskIntoConstraints="NO" id="dlY-3U-E75">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v6c-2a-tuV" userLabel="pw_line">
-                                <rect key="frame" x="115" y="441" width="407" height="1"/>
-                                <color key="backgroundColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="54.5" y="508" width="272" height="1"/>
+                                <color key="backgroundColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="oID-bz-dW1"/>
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock_icon" translatesAutoresizingMaskIntoConstraints="NO" id="9mT-Kx-MG3">
-                                <rect key="frame" x="117" y="401" width="23" height="29"/>
+                                <rect key="frame" x="56.5" y="468.5" width="23" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="23" id="BX3-Gn-lhy"/>
                                     <constraint firstAttribute="height" constant="29" id="hIO-IJ-0rR"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="PASSWORD" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ybn-T5-tCl">
-                                <rect key="frame" x="162" y="411" width="360" height="22"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="textColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="101.5" y="478" width="225" height="22"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Raleway-ExtraLight" family="Raleway" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
-                                        <color key="value" red="0.69803921568627447" green="0.69803921568627447" blue="0.69803921568627447" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.69803921568627447" green="0.69803921568627447" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5xd-cr-EDp" userLabel="mail_line">
-                                <rect key="frame" x="115" y="382" width="407" height="1"/>
-                                <color key="backgroundColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="54.5" y="449.5" width="272" height="1"/>
+                                <color key="backgroundColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="RvP-P4-yxS"/>
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mail_icon" translatesAutoresizingMaskIntoConstraints="NO" id="QVK-yM-jPS">
-                                <rect key="frame" x="117" y="354" width="24" height="16"/>
+                                <rect key="frame" x="56.5" y="421.5" width="24" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="16" id="1xz-Fz-uNw"/>
                                     <constraint firstAttribute="width" constant="24" id="XyW-4o-ph4"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="E-MAIL" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wAm-t4-a4k">
-                                <rect key="frame" x="162" y="352" width="360" height="22"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="textColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="101.5" y="419.5" width="225" height="22"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Raleway-ExtraLight" family="Raleway" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
-                                        <color key="value" red="0.69803921568627447" green="0.69803921568627447" blue="0.69803921568627447" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.69803921568627447" green="0.69803921568627447" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="txv-ru-Jmr">
-                                <rect key="frame" x="467" y="446" width="55" height="34"/>
+                                <rect key="frame" x="271.5" y="513" width="55" height="34"/>
                                 <fontDescription key="fontDescription" name="Raleway-ExtraLight" family="Raleway" pointSize="18"/>
                                 <state key="normal" title="LOGIN">
-                                    <color key="titleColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="onLoginButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ora-ap-g7w"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kw4-qc-7Rn">
-                                <rect key="frame" x="457" y="561" width="103" height="27"/>
+                                <rect key="frame" x="236" y="628" width="103" height="27"/>
                                 <fontDescription key="fontDescription" name="Raleway-ExtraLight" family="Raleway" pointSize="12"/>
                                 <state key="normal" title="New here? Sign up">
-                                    <color key="titleColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="QKt-qT-gz3" kind="showDetail" identifier="showJoinView" action="showViewController:sender:" id="0bs-KN-PkB"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oSJ-pe-sVI">
-                                <rect key="frame" x="517" y="579" width="43" height="1"/>
-                                <color key="backgroundColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="296" y="646" width="43" height="1"/>
+                                <color key="backgroundColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="43" id="0I2-rJ-9r4"/>
                                     <constraint firstAttribute="height" constant="1" id="7ie-wF-DuJ"/>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kw4-qc-7Rn" secondAttribute="bottom" constant="12" id="0E6-fz-t7B"/>
                             <constraint firstItem="txv-ru-Jmr" firstAttribute="top" secondItem="v6c-2a-tuV" secondAttribute="bottom" constant="4" id="2VM-Jj-mki"/>
@@ -239,17 +184,17 @@
                         <viewControllerLayoutGuide type="bottom" id="3p7-aL-cNs"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="jhj-ZA-Aeo">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eio-Bn-jXX" userLabel="Container View1">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <connections>
                                     <segue destination="kjj-eb-0Zx" kind="embed" identifier="AudioChartTableSegue" id="dP6-ny-EV8"/>
                                 </connections>
                             </containerView>
-                            <containerView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jRN-CC-a57" userLabel="Container View2">
-                                <rect key="frame" x="0.0" y="558" width="600" height="42"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jRN-CC-a57" userLabel="Container View2">
+                                <rect key="frame" x="0.0" y="576" width="375" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="iqL-1v-f95"/>
                                 </constraints>
@@ -258,7 +203,7 @@
                                 </connections>
                             </containerView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="eio-Bn-jXX" firstAttribute="height" secondItem="jhj-ZA-Aeo" secondAttribute="height" id="dBX-4z-OXA"/>
                             <constraint firstItem="eio-Bn-jXX" firstAttribute="width" secondItem="jhj-ZA-Aeo" secondAttribute="width" id="fya-Xj-fs6"/>
@@ -284,31 +229,31 @@
             <objects>
                 <tableViewController id="kjj-eb-0Zx" customClass="AudioChartTableViewController" customModule="BeatRecorder_4" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" id="ymW-tK-XP1">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AUDIO_CELL" rowHeight="120" id="9dK-Q8-2mQ" customClass="AudioChartTableViewCell" customModule="BeatRecorder_4" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="600" height="120"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9dK-Q8-2mQ" id="35g-Yb-d6P" userLabel="I">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="120"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mF0-Gp-if5">
-                                            <rect key="frame" x="0.0" y="2" width="600" height="120"/>
+                                            <rect key="frame" x="0.0" y="2" width="375" height="120"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KGg-Re-YfF">
-                                            <rect key="frame" x="122" y="14" width="445" height="21.5"/>
+                                            <rect key="frame" x="122" y="14" width="220" height="21.5"/>
                                             <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="18"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W0t-bU-1Bi">
-                                            <rect key="frame" x="122" y="36" width="445" height="15.5"/>
+                                            <rect key="frame" x="122" y="36" width="220" height="15.5"/>
                                             <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="13"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SyT-Fu-cCO">
@@ -337,7 +282,7 @@
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0i-JM-8XU">
-                                            <rect key="frame" x="575" y="34" width="17" height="56"/>
+                                            <rect key="frame" x="350" y="34" width="17" height="56"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="17" id="Uzr-Ib-8eZ"/>
                                                 <constraint firstAttribute="height" constant="56" id="nRU-Mx-j62"/>
@@ -345,9 +290,9 @@
                                             <state key="normal" image="chart_select_button"/>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I5h-eB-Qkq">
-                                            <rect key="frame" x="540" y="96" width="27" height="15.5"/>
+                                            <rect key="frame" x="315" y="96" width="27" height="15.5"/>
                                             <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="13"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -400,7 +345,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XJO-TG-Qwc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2989" y="-298"/>
+            <point key="canvasLocation" x="3168" y="-299"/>
         </scene>
         <!--Audio Detail View Controller-->
         <scene sceneID="cdd-ln-Fff">
@@ -411,14 +356,14 @@
                         <viewControllerLayoutGuide type="bottom" id="gzw-RR-1QV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="oyA-YA-UC0">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jwR-9X-ekx">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="049-Bq-AVX" userLabel="close">
-                                <rect key="frame" x="565" y="15" width="20" height="20"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="049-Bq-AVX" userLabel="close">
+                                <rect key="frame" x="340" y="15" width="20" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="GKR-uj-DbQ"/>
                                     <constraint firstAttribute="width" constant="20" id="Sod-pe-h7Z"/>
@@ -428,40 +373,41 @@
                                     <action selector="onCloseClicked:" destination="lpb-eU-grR" eventType="touchUpInside" id="mkI-ee-hjF"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QXO-zb-TXn">
-                                <rect key="frame" x="90" y="40" width="420" height="420"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QXO-zb-TXn">
+                                <rect key="frame" x="56.5" y="40" width="262.5" height="262.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="QXO-zb-TXn" secondAttribute="height" multiplier="1:1" id="6MY-tW-TO7"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t07-Hz-Zfm">
-                                <rect key="frame" x="30" y="475" width="540" height="28"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t07-Hz-Zfm">
+                                <rect key="frame" x="19" y="317.5" width="337.5" height="28"/>
                                 <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="23"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Artist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBa-Dt-SJv">
-                                <rect key="frame" x="20" y="511" width="34" height="16.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBa-Dt-SJv">
+                                <rect key="frame" x="16" y="353.5" width="34" height="16.5"/>
                                 <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="14"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cfp-yd-Ou6" userLabel="Seperate line">
-                                <rect key="frame" x="20" y="535" width="560" height="0.5"/>
-                                <color key="backgroundColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cfp-yd-Ou6" userLabel="Seperate line">
+                                <rect key="frame" x="16" y="377.5" width="343" height="0.5"/>
+                                <color key="backgroundColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="0.5" id="57f-YB-7Qe"/>
                                 </constraints>
                             </view>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Pfw-di-34k" customClass="CustomSlider" customModule="BeatRecorder_4" customModuleProvider="target">
-                                <rect key="frame" x="18" y="474" width="564" height="31"/>
-                                <color key="tintColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="14" y="563" width="347" height="31"/>
+                                <color key="tintColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VoM-9x-SGc">
                                 <rect key="frame" x="277" y="448" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3jZ-Br-QNv">
-                                <rect key="frame" x="285" y="432" width="30" height="34"/>
+                                <rect key="frame" x="172.5" y="521" width="30" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="BmW-da-MxU"/>
                                     <constraint firstAttribute="height" constant="34" id="b21-u3-rbA"/>
@@ -472,25 +418,25 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="boe-ld-zbt">
-                                <rect key="frame" x="20" y="500" width="34.5" height="15.5"/>
+                                <rect key="frame" x="16" y="589" width="34.5" height="15.5"/>
                                 <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="13"/>
-                                <color key="textColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKh-vs-Z8I">
-                                <rect key="frame" x="545" y="500" width="34.5" height="15.5"/>
+                                <rect key="frame" x="324" y="589" width="34.5" height="15.5"/>
                                 <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="13"/>
-                                <color key="textColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="lyrics" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OGR-xE-VmM">
-                                <rect key="frame" x="28" y="541" width="544.5" height="15.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lyrics" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OGR-xE-VmM">
+                                <rect key="frame" x="24" y="383.5" width="327" height="15.5"/>
                                 <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="13"/>
-                                <color key="textColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIG-ph-h6A">
-                                <rect key="frame" x="20" y="524" width="560" height="56"/>
+                                <rect key="frame" x="16" y="613" width="343" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="OIG-ph-h6A" secondAttribute="height" multiplier="552:55" id="T7U-eY-Q9Z"/>
                                 </constraints>
@@ -499,18 +445,18 @@
                                     <segue destination="FbM-c2-g3w" kind="show" identifier="showRecordView" id="19O-1z-h7b"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYH-xA-aIm">
-                                <rect key="frame" x="542" y="505.5" width="38" height="29"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYH-xA-aIm">
+                                <rect key="frame" x="321" y="348" width="38" height="29"/>
                                 <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="14"/>
                                 <state key="normal" title="LIKES">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="onLikeClicked:" destination="lpb-eU-grR" eventType="touchUpInside" id="EiE-2S-GsN"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="MYH-xA-aIm" secondAttribute="trailing" id="1To-E0-FId"/>
                             <constraint firstItem="t07-Hz-Zfm" firstAttribute="centerX" secondItem="cfp-yd-Ou6" secondAttribute="centerX" id="5kl-v8-VdZ"/>
@@ -566,7 +512,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ofg-0I-vO5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3692" y="-298"/>
+            <point key="canvasLocation" x="3967" y="-299"/>
         </scene>
         <!--Record View Controller-->
         <scene sceneID="aWX-oV-Da5">
@@ -577,14 +523,14 @@
                         <viewControllerLayoutGuide type="bottom" id="WWA-n4-lwW"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ZIM-rt-Gzk">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Twm-0K-bmY">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KzY-7N-IWT" userLabel="CloseButton">
-                                <rect key="frame" x="565" y="15" width="20" height="20"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KzY-7N-IWT" userLabel="CloseButton">
+                                <rect key="frame" x="340" y="15" width="20" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="mtJ-xB-uCA"/>
                                     <constraint firstAttribute="width" constant="20" id="wCg-bH-YP1"/>
@@ -594,15 +540,15 @@
                                     <action selector="onCloseButton:" destination="FbM-c2-g3w" eventType="touchUpInside" id="TrU-cE-KmR"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XDB-56-pao" userLabel="seperline">
-                                <rect key="frame" x="20" y="47" width="560" height="1"/>
-                                <color key="backgroundColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XDB-56-pao" userLabel="seperline">
+                                <rect key="frame" x="16" y="47" width="343" height="1"/>
+                                <color key="backgroundColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="fzf-BM-xxg"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rzd-FM-EV7" userLabel="Start button">
-                                <rect key="frame" x="225" y="412" width="150" height="150"/>
+                                <rect key="frame" x="140.5" y="535.5" width="94" height="93.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="rzd-FM-EV7" secondAttribute="height" multiplier="1:1" id="Xw9-uw-HO1"/>
                                 </constraints>
@@ -612,10 +558,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7tQ-iO-wl6">
-                                <rect key="frame" x="410" y="471" width="49" height="32"/>
+                                <rect key="frame" x="269.5" y="566" width="49" height="32"/>
                                 <fontDescription key="fontDescription" name="Raleway-Light" family="Raleway" pointSize="17"/>
                                 <state key="normal" title="DONE">
-                                    <color key="titleColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="onDoneClicked:" destination="FbM-c2-g3w" eventType="touchUpInside" id="0lX-ve-odz"/>
@@ -623,7 +569,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R0e-ks-8FB">
-                                <rect key="frame" x="163" y="472" width="27" height="30"/>
+                                <rect key="frame" x="88.5" y="573" width="17" height="18.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="R0e-ks-8FB" secondAttribute="height" multiplier="43:48" id="ABb-To-0Jy"/>
                                 </constraints>
@@ -633,25 +579,25 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zQh-PS-mUS" userLabel="mid view">
-                                <rect key="frame" x="20" y="279" width="560" height="42"/>
+                                <rect key="frame" x="16" y="223" width="343" height="221.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l5A-Ja-zGg">
-                                        <rect key="frame" x="0.0" y="0.0" width="560" height="1"/>
-                                        <color key="backgroundColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="1"/>
+                                        <color key="backgroundColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="gFo-nC-KpV"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3qU-5K-z30">
-                                        <rect key="frame" x="0.0" y="41" width="560" height="1"/>
-                                        <color key="backgroundColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <rect key="frame" x="0.0" y="220.5" width="343" height="1"/>
+                                        <color key="backgroundColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="qVv-lK-gux"/>
                                         </constraints>
                                     </view>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="qrl-FU-ZgW" customClass="CustomSlider" customModule="BeatRecorder_4" customModuleProvider="target">
-                                        <rect key="frame" x="-2" y="6" width="564" height="31"/>
-                                        <color key="tintColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <rect key="frame" x="-2" y="95.5" width="347" height="31"/>
+                                        <color key="tintColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </slider>
                                 </subviews>
                                 <constraints>
@@ -665,123 +611,123 @@
                                     <constraint firstItem="l5A-Ja-zGg" firstAttribute="top" secondItem="zQh-PS-mUS" secondAttribute="top" id="wZx-rv-OKY"/>
                                 </constraints>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ovW-Z3-rfN">
-                                <rect key="frame" x="31" y="56" width="537" height="215"/>
-                                <color key="textColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ovW-Z3-rfN">
+                                <rect key="frame" x="27" y="56" width="321" height="159"/>
+                                <color key="textColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ChP-Fg-qVa">
-                                <rect key="frame" x="117" y="338" width="21" height="30"/>
+                                <rect key="frame" x="84" y="461.5" width="3" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="jVe-1T-Fv2"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ET9-Ep-16P" customClass="RadioButton" customModule="BeatRecorder_4" customModuleProvider="target">
-                                <rect key="frame" x="31" y="341" width="78" height="25"/>
+                                <rect key="frame" x="27" y="464.5" width="49" height="25"/>
                                 <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="11"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Dance">
-                                    <color key="titleColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <state key="selected">
-                                    <color key="titleColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <state key="highlighted">
-                                    <color key="titleColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="onFilterSelected:" destination="FbM-c2-g3w" eventType="touchUpInside" id="Q95-gw-jCU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYx-es-Gyo" customClass="RadioButton" customModule="BeatRecorder_4" customModuleProvider="target">
-                                <rect key="frame" x="146" y="341" width="78" height="25"/>
+                                <rect key="frame" x="95" y="464.5" width="49" height="25"/>
                                 <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="11"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Edge">
-                                    <color key="titleColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <state key="selected">
-                                    <color key="titleColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <state key="highlighted">
-                                    <color key="titleColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="onFilterSelected:" destination="FbM-c2-g3w" eventType="touchUpInside" id="vo4-Hi-6GE"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m2c-zZ-e8P" customClass="RadioButton" customModule="BeatRecorder_4" customModuleProvider="target">
-                                <rect key="frame" x="375" y="341" width="78" height="25"/>
+                                <rect key="frame" x="231" y="464.5" width="49" height="25"/>
                                 <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="11"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Bright">
-                                    <color key="titleColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <state key="selected">
-                                    <color key="titleColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <state key="highlighted">
-                                    <color key="titleColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="onFilterSelected:" destination="FbM-c2-g3w" eventType="touchUpInside" id="yKM-lu-DKl"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dtb-Ni-lAP" customClass="RadioButton" customModule="BeatRecorder_4" customModuleProvider="target">
-                                <rect key="frame" x="490" y="341" width="78" height="25"/>
+                                <rect key="frame" x="299.5" y="464.5" width="48.5" height="25"/>
                                 <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="11"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Custom">
-                                    <color key="titleColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <state key="selected">
-                                    <color key="titleColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <state key="highlighted">
-                                    <color key="titleColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="onFilterSelected:" destination="FbM-c2-g3w" eventType="touchUpInside" id="PIS-cn-zPp"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mFQ-bJ-6AM">
-                                <rect key="frame" x="232" y="338" width="20.5" height="30"/>
+                                <rect key="frame" x="152" y="461.5" width="2.5" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="xFk-1u-cEi"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X7o-Vi-N9H">
-                                <rect key="frame" x="347" y="338" width="20.5" height="30"/>
+                                <rect key="frame" x="220" y="461.5" width="3.5" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="0xP-TU-GhX"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4zq-Vs-CYI">
-                                <rect key="frame" x="461" y="338" width="20" height="30"/>
+                                <rect key="frame" x="288" y="461.5" width="3.5" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Haf-dl-y72"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7gS-XJ-VfX" customClass="RadioButton" customModule="BeatRecorder_4" customModuleProvider="target">
-                                <rect key="frame" x="261" y="341" width="78" height="25"/>
+                                <rect key="frame" x="163" y="464.5" width="49" height="25"/>
                                 <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="11"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Natural">
-                                    <color key="titleColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <state key="selected">
-                                    <color key="titleColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <state key="highlighted">
-                                    <color key="titleColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="onFilterSelected:" destination="FbM-c2-g3w" eventType="touchUpInside" id="L8g-Og-k88"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Twm-0K-bmY" firstAttribute="centerX" secondItem="ZIM-rt-Gzk" secondAttribute="centerX" id="09b-YV-aAk"/>
                             <constraint firstItem="Twm-0K-bmY" firstAttribute="centerY" secondItem="ZIM-rt-Gzk" secondAttribute="centerY" id="09g-nV-dRf"/>
@@ -853,7 +799,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PGZ-u3-scF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4354" y="-298"/>
+            <point key="canvasLocation" x="4748" y="-298"/>
         </scene>
         <!--Upload View Controller-->
         <scene sceneID="ZXW-A3-O6S">
@@ -864,83 +810,83 @@
                         <viewControllerLayoutGuide type="bottom" id="DIJ-G6-2u5"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="cHj-gF-lsT">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h2s-HJ-jWq">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nd6-0K-rXg" userLabel="seperline1">
-                                <rect key="frame" x="20" y="43" width="560" height="1"/>
-                                <color key="backgroundColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nd6-0K-rXg" userLabel="seperline1">
+                                <rect key="frame" x="16" y="43" width="343" height="1"/>
+                                <color key="backgroundColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="4Rt-hM-HTb"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="TITLE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0k-c4-I8g">
-                                <rect key="frame" x="32" y="60" width="46" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TITLE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0k-c4-I8g">
+                                <rect key="frame" x="28" y="60" width="46" height="20"/>
                                 <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="TITLE" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6rM-et-yH5">
-                                <rect key="frame" x="86" y="59" width="428" height="22"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="textColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="TITLE" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6rM-et-yH5">
+                                <rect key="frame" x="82" y="59" width="211" height="22"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Raleway-ExtraLight" family="Raleway" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
-                                        <color key="value" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4w5-31-5oT" userLabel="seperline2">
-                                <rect key="frame" x="20" y="96" width="560" height="1"/>
-                                <color key="backgroundColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4w5-31-5oT" userLabel="seperline2">
+                                <rect key="frame" x="16" y="96" width="343" height="1"/>
+                                <color key="backgroundColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="ZMw-Ng-yYt"/>
                                 </constraints>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eGH-kb-hdc" userLabel="Text View1">
-                                <rect key="frame" x="32" y="105" width="537" height="205.5"/>
-                                <color key="textColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eGH-kb-hdc" userLabel="Text View1">
+                                <rect key="frame" x="28" y="105" width="319" height="239"/>
+                                <color key="textColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pEF-Sk-499" userLabel="seperline3">
-                                <rect key="frame" x="20" y="318.5" width="560" height="1"/>
-                                <color key="backgroundColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pEF-Sk-499" userLabel="seperline3">
+                                <rect key="frame" x="16" y="352" width="343" height="1"/>
+                                <color key="backgroundColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="tQW-Z3-wFE"/>
                                 </constraints>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="WIC-HH-HAC" userLabel="Text View2">
-                                <rect key="frame" x="32" y="327" width="537" height="205"/>
-                                <color key="textColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="WIC-HH-HAC" userLabel="Text View2">
+                                <rect key="frame" x="28" y="360.5" width="319" height="238.5"/>
+                                <color key="textColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D1I-iW-jqt" userLabel="seperline4">
-                                <rect key="frame" x="20" y="540" width="560" height="1"/>
-                                <color key="backgroundColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="16" y="607" width="343" height="1"/>
+                                <color key="backgroundColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="hNX-5E-1Vl"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AbF-Op-P4o">
-                                <rect key="frame" x="264" y="546" width="73" height="34"/>
+                                <rect key="frame" x="151" y="613" width="73" height="34"/>
                                 <fontDescription key="fontDescription" name="Raleway-Light" family="Raleway" pointSize="18"/>
                                 <state key="normal" title="UPLOAD">
-                                    <color key="titleColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="onDoneClicked:" destination="FbM-c2-g3w" eventType="touchUpInside" id="Xbc-sN-JY2"/>
                                     <action selector="onUploadClicked:" destination="mYu-Ii-r7E" eventType="touchUpInside" id="TWM-QA-dWO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nkm-jj-oNs" userLabel="CloseButton">
-                                <rect key="frame" x="565" y="15" width="20" height="20"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nkm-jj-oNs" userLabel="CloseButton">
+                                <rect key="frame" x="340" y="15" width="20" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="20" id="MdY-Y6-qXN"/>
                                     <constraint firstAttribute="height" constant="20" id="x4V-6K-f63"/>
@@ -951,7 +897,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="4w5-31-5oT" firstAttribute="width" secondItem="Nd6-0K-rXg" secondAttribute="width" id="0d8-Dh-kNv"/>
                             <constraint firstItem="WIC-HH-HAC" firstAttribute="leading" secondItem="eGH-kb-hdc" secondAttribute="leading" id="7PJ-Ir-H6z"/>
@@ -998,7 +944,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TSO-aw-Xn0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5030" y="-298"/>
+            <point key="canvasLocation" x="5505" y="-298"/>
         </scene>
         <!--Main Tab Bar View Controller-->
         <scene sceneID="Brf-XA-Jl1">
@@ -1007,8 +953,8 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" id="gYY-I9-mp0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <color key="tintColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="iEh-KM-TSc" kind="relationship" relationship="viewControllers" id="qhc-Yb-fPQ"/>
@@ -1030,14 +976,14 @@
                         <viewControllerLayoutGuide type="bottom" id="k6T-oo-Fpq"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="cGb-gU-3Bc">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_bg" translatesAutoresizingMaskIntoConstraints="NO" id="6B0-SO-c6u">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucB-ke-Nkx">
-                                <rect key="frame" x="560" y="8" width="20" height="20"/>
+                                <rect key="frame" x="339" y="8" width="20" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="O0X-9E-sLV"/>
                                     <constraint firstAttribute="width" constant="20" id="oFK-dF-ptA"/>
@@ -1048,95 +994,95 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HN3-9a-dHa" userLabel="pw_line">
-                                <rect key="frame" x="115" y="382" width="371" height="1"/>
-                                <color key="backgroundColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="54.5" y="449" width="266.5" height="1"/>
+                                <color key="backgroundColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="kJ2-7v-qaW"/>
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Tby-Li-Pqx">
-                                <rect key="frame" x="117" y="342" width="23" height="29"/>
+                                <rect key="frame" x="56.5" y="409" width="23" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="1s5-yL-Sgp"/>
                                     <constraint firstAttribute="width" constant="23" id="YtT-7D-3um"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="PASSWORD" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QQI-hj-NSr">
-                                <rect key="frame" x="162" y="352" width="360" height="22"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="textColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="101.5" y="419" width="225" height="22"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Raleway-ExtraLight" family="Raleway" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
-                                        <color key="value" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KhU-Ux-gMF" userLabel="mail_line">
-                                <rect key="frame" x="115" y="323" width="371" height="1"/>
-                                <color key="backgroundColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="54.5" y="390" width="266.5" height="1"/>
+                                <color key="backgroundColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="lEc-Dx-RdB"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FeA-b5-OC7" userLabel="pw_confirm_line">
-                                <rect key="frame" x="115" y="441" width="371" height="1"/>
-                                <color key="backgroundColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="54.5" y="508" width="266.5" height="1"/>
+                                <color key="backgroundColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="aEh-1q-S6w"/>
                                 </constraints>
                             </view>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="PASSWORD CONFIRM" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HBz-ym-LaE" userLabel="PASSWORD_CONFIRM">
-                                <rect key="frame" x="162" y="411" width="360" height="22"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="textColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="101.5" y="478" width="225" height="22"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Raleway-ExtraLight" family="Raleway" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
-                                        <color key="value" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock_icon" translatesAutoresizingMaskIntoConstraints="NO" id="AJN-yK-Teo" userLabel="lock_icon2">
-                                <rect key="frame" x="117" y="401" width="23" height="29"/>
+                                <rect key="frame" x="56.5" y="468" width="23" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="23" id="3fk-Uo-sMO"/>
                                     <constraint firstAttribute="height" constant="29" id="y8A-7b-yok"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1o6-rv-g8N">
-                                <rect key="frame" x="481" y="446" width="41" height="34"/>
+                                <rect key="frame" x="285.5" y="513" width="41" height="34"/>
                                 <fontDescription key="fontDescription" name="Raleway-ExtraLight" family="Raleway" pointSize="18"/>
                                 <state key="normal" title="JOIN">
-                                    <color key="titleColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="onJoinButtonClicked:" destination="QKt-qT-gz3" eventType="touchUpInside" id="PIh-e9-371"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mail_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Buv-Xp-F9j">
-                                <rect key="frame" x="117" y="295" width="24" height="16"/>
+                                <rect key="frame" x="56.5" y="362" width="24" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="16" id="DU2-GG-h98"/>
                                     <constraint firstAttribute="width" constant="24" id="SOb-nH-RcN"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="E-MAIL" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s6P-xi-sde">
-                                <rect key="frame" x="162" y="293" width="360" height="22"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="textColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="101.5" y="360" width="225" height="22"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Raleway-ExtraLight" family="Raleway" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
-                                        <color key="value" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="HN3-9a-dHa" firstAttribute="top" secondItem="QQI-hj-NSr" secondAttribute="bottom" constant="8" id="2C3-gp-j9R"/>
                             <constraint firstItem="HBz-ym-LaE" firstAttribute="width" secondItem="QQI-hj-NSr" secondAttribute="width" id="4mq-hJ-8Zm"/>
@@ -1190,7 +1136,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fch-uQ-a6L" customClass="TabbarNavigationController" customModule="BeatRecorder_4" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="MIXTAPE" id="4sc-xB-fun"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XYy-a3-V3Q">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="XYy-a3-V3Q">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1212,36 +1158,36 @@
                         <viewControllerLayoutGuide type="bottom" id="HpV-hA-Hk4"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="c62-n5-axU">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0eg-HI-yp4">
-                                <rect key="frame" x="0.0" y="65" width="600" height="222"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0eg-HI-yp4">
+                                <rect key="frame" x="0.0" y="64" width="375" height="247"/>
                                 <connections>
                                     <segue destination="Kb3-UA-oRF" kind="embed" identifier="ArtistProfileSegue" id="Uqx-YK-uBF"/>
                                 </connections>
                             </containerView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Edw-E1-fUH" userLabel="seperline">
-                                <rect key="frame" x="0.0" y="286" width="600" height="1"/>
-                                <color key="backgroundColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="0.0" y="311" width="375" height="1"/>
+                                <color key="backgroundColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="hzK-MZ-BYE"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AUTO LOGIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnU-zR-hwT">
-                                <rect key="frame" x="20" y="295" width="103" height="33"/>
+                                <rect key="frame" x="16" y="320" width="103" height="33"/>
                                 <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ON" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BeV-xS-ffZ">
-                                <rect key="frame" x="546" y="302" width="26" height="20"/>
+                                <rect key="frame" x="325" y="327" width="26" height="20"/>
                                 <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tEa-7E-dot" userLabel="AUTO_LOGIN_BG">
-                                <rect key="frame" x="0.0" y="287" width="600" height="50"/>
+                                <rect key="frame" x="-4" y="312" width="375" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="wTK-Tl-jPL"/>
                                 </constraints>
@@ -1250,14 +1196,14 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gJb-5o-qVm" userLabel="seperline">
-                                <rect key="frame" x="11" y="337" width="578" height="1"/>
-                                <color key="backgroundColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="7" y="362" width="361" height="1"/>
+                                <color key="backgroundColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="olZ-VO-7kN"/>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Edw-E1-fUH" firstAttribute="width" secondItem="c62-n5-axU" secondAttribute="width" id="0jP-Xx-jrr"/>
                             <constraint firstItem="fnU-zR-hwT" firstAttribute="centerY" secondItem="tEa-7E-dot" secondAttribute="centerY" id="2Lg-kI-vmh"/>
@@ -1297,7 +1243,7 @@
                         <viewControllerLayoutGuide type="bottom" id="gra-ae-vPb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="IrM-4X-m3C">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="42"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="42"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wJd-hF-bG8">
@@ -1313,9 +1259,9 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0xY-Pd-bDs">
-                                <rect key="frame" x="44" y="7" width="511" height="16.5"/>
+                                <rect key="frame" x="44" y="7" width="286" height="16.5"/>
                                 <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="14"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="tag">
@@ -1324,9 +1270,9 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ida-A2-J4W">
-                                <rect key="frame" x="44" y="23" width="511" height="12"/>
+                                <rect key="frame" x="44" y="23" width="286" height="12"/>
                                 <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="10"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="tag">
@@ -1335,13 +1281,13 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dRT-L0-c0g">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="2"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="progressTintColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="trackTintColor" red="0.69803921568627447" green="0.69803921568627447" blue="0.69803921568627447" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="2"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="progressTintColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="trackTintColor" red="0.69803921568627447" green="0.69803921568627447" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </progressView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfb-9B-ShJ">
-                                <rect key="frame" x="563" y="7" width="28" height="28"/>
+                                <rect key="frame" x="338" y="7" width="28" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="28" id="7CT-6l-8hh"/>
                                     <constraint firstAttribute="height" constant="28" id="G8t-lD-C8p"/>
@@ -1352,8 +1298,8 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="tintColor" red="0.0" green="0.69803921568627447" blue="0.69803921568627447" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.0" green="0.69803921568627447" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="hfb-9B-ShJ" firstAttribute="centerY" secondItem="IrM-4X-m3C" secondAttribute="centerY" id="1ul-B7-noT"/>
                             <constraint firstItem="Ida-A2-J4W" firstAttribute="top" secondItem="0xY-Pd-bDs" secondAttribute="bottom" id="67Y-ZB-yNR"/>
@@ -1381,7 +1327,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VaD-Wh-CwR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2326" y="90"/>
+            <point key="canvasLocation" x="2325" y="87"/>
         </scene>
         <!--CHART-->
         <scene sceneID="FEl-Yf-YGx">
@@ -1389,7 +1335,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iEh-KM-TSc" customClass="TabbarNavigationController" customModule="BeatRecorder_4" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="CHART" id="yvV-bv-Oai"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Cxi-fS-1N5">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Cxi-fS-1N5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1407,19 +1353,19 @@
             <objects>
                 <tableViewController id="5bA-2p-ufQ" customClass="ArtistChartTableViewController" customModule="BeatRecorder_4" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" id="jpF-Q6-g09">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ARTIST_CELL" rowHeight="120" id="VTA-2B-S1F" customClass="ArtistChartTableViewCell" customModule="BeatRecorder_4" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="600" height="120"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VTA-2B-S1F" id="CEr-yk-0TI" userLabel="I">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="119.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="119"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yqJ-Uc-6jc">
-                                            <rect key="frame" x="0.0" y="2" width="600" height="120"/>
+                                            <rect key="frame" x="0.0" y="2" width="375" height="120"/>
                                         </imageView>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="82e-xR-Ef2">
                                             <rect key="frame" x="8" y="10" width="104" height="104"/>
@@ -1429,7 +1375,7 @@
                                             </constraints>
                                         </imageView>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GmN-0R-5ZO">
-                                            <rect key="frame" x="575" y="34" width="17" height="56"/>
+                                            <rect key="frame" x="350" y="34" width="17" height="56"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="56" id="H7k-Qf-dBV"/>
                                                 <constraint firstAttribute="width" constant="17" id="yMp-Yw-hCT"/>
@@ -1437,9 +1383,9 @@
                                             <state key="normal" image="chart_select_button"/>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34a-id-6o6">
-                                            <rect key="frame" x="122" y="16" width="445" height="21.5"/>
+                                            <rect key="frame" x="122" y="16" width="220" height="21.5"/>
                                             <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="18"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -1485,23 +1431,23 @@
                         <viewControllerLayoutGuide type="bottom" id="c4F-cZ-EWN"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="JqC-F8-ACd">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uxr-7T-qyc">
-                                <rect key="frame" x="0.0" y="20" width="600" height="222"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uxr-7T-qyc">
+                                <rect key="frame" x="0.0" y="64" width="375" height="247"/>
                                 <connections>
                                     <segue destination="zg5-eP-6JK" kind="embed" identifier="ArtistProfileSegue" id="8ny-Ya-Tku"/>
                                 </connections>
                             </containerView>
-                            <containerView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ka0-uQ-nDh">
-                                <rect key="frame" x="0.0" y="242" width="600" height="358"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ka0-uQ-nDh">
+                                <rect key="frame" x="0.0" y="311" width="375" height="307"/>
                                 <connections>
                                     <segue destination="0Hs-Qt-ffA" kind="embed" identifier="AudioChartTableSegue" id="S34-es-EPI"/>
                                 </connections>
                             </containerView>
-                            <containerView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QFU-NW-Hid" userLabel="Container View2">
-                                <rect key="frame" x="0.0" y="558" width="600" height="42"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QFU-NW-Hid" userLabel="Container View2">
+                                <rect key="frame" x="0.0" y="576" width="375" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="Pq9-cQ-Nf4"/>
                                 </constraints>
@@ -1510,7 +1456,7 @@
                                 </connections>
                             </containerView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Uxr-7T-qyc" firstAttribute="width" secondItem="JqC-F8-ACd" secondAttribute="width" id="34L-ap-tiS"/>
                             <constraint firstItem="Uxr-7T-qyc" firstAttribute="top" secondItem="4B5-z4-CSQ" secondAttribute="bottom" id="9sy-wN-RcC"/>
@@ -1543,31 +1489,31 @@
                         <viewControllerLayoutGuide type="bottom" id="7Ph-2d-ms5"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Hs5-l9-Y9D">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="222"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="247"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xny-S8-6vg">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="172"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="197"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pMw-TZ-ING">
-                                <rect key="frame" x="0.0" y="172" width="600" height="50"/>
+                                <rect key="frame" x="0.0" y="197" width="375" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MIXTAPE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ahg-bL-pNz">
                                         <rect key="frame" x="40" y="30" width="43" height="12"/>
                                         <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="10"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FOLLOWER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FPk-U4-x1Z">
-                                        <rect key="frame" x="272" y="30" width="55" height="12"/>
+                                        <rect key="frame" x="159.5" y="30" width="55" height="12"/>
                                         <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="10"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FOLLOWING" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s27-5t-isb">
-                                        <rect key="frame" x="500" y="30" width="60" height="12"/>
+                                        <rect key="frame" x="275" y="30" width="60" height="12"/>
                                         <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="10"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EsS-El-Kbt">
@@ -1581,7 +1527,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8nO-yr-Sqe">
-                                        <rect key="frame" x="285" y="4" width="30" height="32"/>
+                                        <rect key="frame" x="172.5" y="4" width="30" height="32"/>
                                         <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
                                         <state key="normal" title="0">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -1591,7 +1537,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcA-Rn-JCo">
-                                        <rect key="frame" x="515" y="4" width="30" height="32"/>
+                                        <rect key="frame" x="290" y="4" width="30" height="32"/>
                                         <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
                                         <state key="normal" title="0">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -1601,7 +1547,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="00F-vq-nS0"/>
                                     <constraint firstItem="8nO-yr-Sqe" firstAttribute="centerY" secondItem="EsS-El-Kbt" secondAttribute="centerY" id="2iA-P2-PUm"/>
@@ -1619,14 +1565,14 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARTIST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQa-3i-k75">
-                                <rect key="frame" x="270" y="147" width="61" height="21.5"/>
+                                <rect key="frame" x="157" y="172" width="61" height="22"/>
                                 <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="18"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="B3Y-NT-mpw">
-                                <rect key="frame" x="240" y="18" width="120.5" height="120.5"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="119.5" y="26.5" width="137.5" height="137.5"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="B3Y-NT-mpw" secondAttribute="height" multiplier="1:1" id="7zc-cX-c6p"/>
                                 </constraints>
@@ -1658,38 +1604,38 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3th-ax-ls3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3692" y="-1926"/>
+            <point key="canvasLocation" x="3766" y="-1984"/>
         </scene>
         <!--Audio Chart Table View Controller-->
         <scene sceneID="2Pk-D5-FXd">
             <objects>
                 <tableViewController id="0Hs-Qt-ffA" customClass="AudioChartTableViewController" customModule="BeatRecorder_4" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" id="i6G-dS-txj">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="358"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="307"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AUDIO_CELL" rowHeight="120" id="aSP-lp-yBG" customClass="AudioChartTableViewCell" customModule="BeatRecorder_4" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="600" height="120"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aSP-lp-yBG" id="ziZ-qe-HZk" userLabel="I">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="120"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="M7d-uw-vEX">
-                                            <rect key="frame" x="0.0" y="2" width="600" height="120"/>
+                                            <rect key="frame" x="0.0" y="2" width="375" height="120"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l4d-bl-Tfh">
-                                            <rect key="frame" x="122" y="14" width="445" height="21.5"/>
+                                            <rect key="frame" x="122" y="14" width="220" height="21.5"/>
                                             <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="18"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Liq-LE-Iwx">
-                                            <rect key="frame" x="122" y="36" width="445" height="15.5"/>
+                                            <rect key="frame" x="122" y="36" width="220" height="15.5"/>
                                             <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="13"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jT5-ZY-TiT">
@@ -1718,7 +1664,7 @@
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GrK-4r-agG">
-                                            <rect key="frame" x="575" y="34" width="17" height="56"/>
+                                            <rect key="frame" x="350" y="34" width="17" height="56"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="56" id="BgV-00-36N"/>
                                                 <constraint firstAttribute="width" constant="17" id="gQd-EA-Pht"/>
@@ -1726,9 +1672,9 @@
                                             <state key="normal" image="chart_select_button"/>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdX-1j-xOh">
-                                            <rect key="frame" x="540" y="96" width="27" height="15.5"/>
+                                            <rect key="frame" x="315" y="96" width="27" height="15.5"/>
                                             <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="13"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -1781,7 +1727,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8hi-zT-way" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3692" y="-1586"/>
+            <point key="canvasLocation" x="3767" y="-1633"/>
         </scene>
         <!--Mini Audio Player View Controller-->
         <scene sceneID="q7E-sR-Mh7">
@@ -1792,7 +1738,7 @@
                         <viewControllerLayoutGuide type="bottom" id="M83-lD-KlI"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="PbB-Xf-Dtk">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="42"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="42"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="akk-fU-UWX">
@@ -1808,9 +1754,9 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lV8-x4-t87">
-                                <rect key="frame" x="44" y="7" width="511" height="16.5"/>
+                                <rect key="frame" x="44" y="7" width="286" height="16.5"/>
                                 <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="14"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="tag">
@@ -1819,9 +1765,9 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OPh-4c-4wc">
-                                <rect key="frame" x="44" y="23" width="511" height="12"/>
+                                <rect key="frame" x="44" y="23" width="286" height="12"/>
                                 <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="10"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="tag">
@@ -1830,13 +1776,13 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KtK-Hk-4nv">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="2"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="progressTintColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="trackTintColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="2"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="progressTintColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="trackTintColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </progressView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bs5-id-Nng">
-                                <rect key="frame" x="563" y="7" width="28" height="28"/>
+                                <rect key="frame" x="338" y="7" width="28" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="28" id="OsQ-ZL-kGn"/>
                                     <constraint firstAttribute="height" constant="28" id="noG-4z-EQq"/>
@@ -1847,8 +1793,8 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="tintColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="OPh-4c-4wc" firstAttribute="leading" secondItem="lV8-x4-t87" secondAttribute="leading" id="3tm-7p-vUB"/>
                             <constraint firstAttribute="leading" secondItem="akk-fU-UWX" secondAttribute="leading" id="7cM-aC-7S8"/>
@@ -1876,38 +1822,38 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kFB-9t-oPL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3692" y="-1331"/>
+            <point key="canvasLocation" x="2987" y="-2208"/>
         </scene>
         <!--Audio Chart Table View Controller-->
         <scene sceneID="SdW-kR-PWu">
             <objects>
                 <tableViewController id="1Wd-dd-g6a" customClass="AudioChartTableViewController" customModule="BeatRecorder_4" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" id="Avf-D1-ag3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AUDIO_CELL" rowHeight="120" id="ipo-Du-XSU" customClass="AudioChartTableViewCell" customModule="BeatRecorder_4" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="600" height="120"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ipo-Du-XSU" id="r4w-pL-zLz" userLabel="I">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="120"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zK4-Tq-ryB">
-                                            <rect key="frame" x="0.0" y="2" width="600" height="120"/>
+                                            <rect key="frame" x="0.0" y="2" width="375" height="120"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJK-pr-14z">
-                                            <rect key="frame" x="122" y="14" width="445" height="21.5"/>
+                                            <rect key="frame" x="122" y="14" width="220" height="21.5"/>
                                             <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="18"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2nq-zg-e1U">
-                                            <rect key="frame" x="122" y="36" width="445" height="15.5"/>
+                                            <rect key="frame" x="122" y="36" width="220" height="15.5"/>
                                             <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="13"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mbx-cP-8FL">
@@ -1936,7 +1882,7 @@
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZiA-HG-kfH">
-                                            <rect key="frame" x="575" y="34" width="17" height="56"/>
+                                            <rect key="frame" x="350" y="34" width="17" height="56"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="17" id="V4L-WK-40W"/>
                                                 <constraint firstAttribute="height" constant="56" id="wh5-hZ-fBE"/>
@@ -1944,9 +1890,9 @@
                                             <state key="normal" image="chart_select_button"/>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3M-ui-96y">
-                                            <rect key="frame" x="540" y="96" width="27" height="15.5"/>
+                                            <rect key="frame" x="315" y="96" width="27" height="15.5"/>
                                             <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="13"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -1999,7 +1945,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ped-Xg-4X5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2989" y="-1110"/>
+            <point key="canvasLocation" x="2988" y="-1110"/>
         </scene>
         <!--MUSIC-->
         <scene sceneID="aQQ-F1-lXZ">
@@ -2010,17 +1956,17 @@
                         <viewControllerLayoutGuide type="bottom" id="Sx3-Nc-ZJW"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="rK9-x0-YfF">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kHW-nG-2Ua">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <connections>
                                     <segue destination="1Wd-dd-g6a" kind="embed" identifier="AudioChartTableSegue" id="qOM-EZ-oRo"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pYo-WY-Ybv">
-                                <rect key="frame" x="0.0" y="509" width="600" height="42"/>
+                                <rect key="frame" x="0.0" y="576" width="375" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="FWB-AU-0q6"/>
                                 </constraints>
@@ -2029,7 +1975,7 @@
                                 </connections>
                             </containerView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="kHW-nG-2Ua" firstAttribute="centerY" secondItem="rK9-x0-YfF" secondAttribute="centerY" id="QID-Q1-vZ5"/>
                             <constraint firstItem="kHW-nG-2Ua" firstAttribute="height" secondItem="rK9-x0-YfF" secondAttribute="height" id="RWi-aa-qV1"/>
@@ -2059,7 +2005,7 @@
                         <viewControllerLayoutGuide type="bottom" id="kiq-cT-AW1"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1ue-XS-78M">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="42"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="42"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YMr-xG-9ct">
@@ -2075,9 +2021,9 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WcI-K2-Tye">
-                                <rect key="frame" x="44" y="7" width="511" height="16.5"/>
+                                <rect key="frame" x="44" y="7" width="286" height="16.5"/>
                                 <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="14"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="tag">
@@ -2086,9 +2032,9 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRY-pK-yMw">
-                                <rect key="frame" x="44" y="23" width="511" height="12"/>
+                                <rect key="frame" x="44" y="23" width="286" height="12"/>
                                 <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="10"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="tag">
@@ -2097,13 +2043,13 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hCg-Rt-Kym">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="2"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="progressTintColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="trackTintColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="2"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="progressTintColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="trackTintColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </progressView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TVa-Gj-LdL">
-                                <rect key="frame" x="563" y="7" width="28" height="28"/>
+                                <rect key="frame" x="338" y="7" width="28" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="28" id="3UC-Sw-p4b"/>
                                     <constraint firstAttribute="height" constant="28" id="ib8-gU-Z0M"/>
@@ -2114,8 +2060,8 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="tintColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.0" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="hRY-pK-yMw" firstAttribute="top" secondItem="WcI-K2-Tye" secondAttribute="bottom" id="2Rh-SS-frZ"/>
                             <constraint firstItem="WcI-K2-Tye" firstAttribute="top" secondItem="hCg-Rt-Kym" secondAttribute="bottom" constant="5" id="3S3-2R-7BE"/>
@@ -2151,7 +2097,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jac-xc-AY8" customClass="TabbarNavigationController" customModule="BeatRecorder_4" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="MUSIC" id="kO3-CB-Ihx"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="G3e-vB-U8e">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="G3e-vB-U8e">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -2174,7 +2120,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YeY-Ho-8A4" customClass="TabbarNavigationController" customModule="BeatRecorder_4" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="SETTINGS" id="nJb-p0-Kph"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LgJ-yD-Qnl">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="LgJ-yD-Qnl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -2196,31 +2142,31 @@
                         <viewControllerLayoutGuide type="bottom" id="Bsj-D8-oHU"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="RrQ-9o-kdv">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="222"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="247"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y7E-wO-2EG">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="172"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="197"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cE2-Uq-lhB">
-                                <rect key="frame" x="0.0" y="172" width="600" height="50"/>
+                                <rect key="frame" x="0.0" y="197" width="375" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MIXTAPE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYQ-dJ-K0W">
                                         <rect key="frame" x="40" y="30" width="43" height="12"/>
                                         <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="10"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FOLLOWER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fM-6W-6Ae">
-                                        <rect key="frame" x="272" y="30" width="55" height="12"/>
+                                        <rect key="frame" x="159.5" y="30" width="55" height="12"/>
                                         <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="10"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FOLLOWING" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTE-Sc-1QC">
-                                        <rect key="frame" x="500" y="30" width="60" height="12"/>
+                                        <rect key="frame" x="275" y="30" width="60" height="12"/>
                                         <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="10"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sI9-TV-l2R">
@@ -2231,21 +2177,21 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zv8-VL-4ZU">
-                                        <rect key="frame" x="285" y="4" width="30" height="32"/>
+                                        <rect key="frame" x="172.5" y="4" width="30" height="32"/>
                                         <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
                                         <state key="normal" title="0">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y23-Uo-r4R">
-                                        <rect key="frame" x="515" y="4" width="30" height="32"/>
+                                        <rect key="frame" x="290" y="4" width="30" height="32"/>
                                         <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
                                         <state key="normal" title="0">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="1fM-6W-6Ae" firstAttribute="centerY" secondItem="CYQ-dJ-K0W" secondAttribute="centerY" id="6ba-Fo-CpW"/>
                                     <constraint firstItem="sI9-TV-l2R" firstAttribute="centerX" secondItem="CYQ-dJ-K0W" secondAttribute="centerX" id="DR8-JP-Erf"/>
@@ -2263,14 +2209,14 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARTIST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OP5-aZ-Glf">
-                                <rect key="frame" x="270" y="147" width="61" height="21.5"/>
+                                <rect key="frame" x="157" y="172" width="61" height="21.5"/>
                                 <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="18"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mVC-od-oZX">
-                                <rect key="frame" x="239" y="18.5" width="120.5" height="120.5"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="118" y="26" width="138" height="138"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="mVC-od-oZX" secondAttribute="height" multiplier="1:1" id="mCF-83-pxn"/>
                                 </constraints>
@@ -2302,7 +2248,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V3M-iu-XGg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3000" y="388"/>
+            <point key="canvasLocation" x="3224" y="368"/>
         </scene>
     </scenes>
     <resources>
@@ -2319,7 +2265,7 @@
         <image name="select_button" width="678" height="68"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="eEI-eI-the"/>
+        <segue reference="luT-zh-GUn"/>
         <segue reference="a6q-LK-Z5n"/>
     </inferredMetricsTieBreakers>
 </document>

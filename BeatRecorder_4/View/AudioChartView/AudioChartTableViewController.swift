@@ -32,24 +32,24 @@ class AudioChartTableViewController: UITableViewController, UISearchBarDelegate
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    override func viewWillDisappear(animated: Bool)
+    override func viewWillDisappear(_ animated: Bool)
     {
         super.viewWillDisappear(animated)
     }
     
-    override func viewDidAppear(animated: Bool)
+    override func viewDidAppear(_ animated: Bool)
     {
         super.viewDidAppear(animated)
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return self.audio_chart.getChartLength()
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-        let cell = self.tableView.dequeueReusableCellWithIdentifier("AUDIO_CELL") as! AudioChartTableViewCell
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: "AUDIO_CELL") as! AudioChartTableViewCell
         
         let cur_audio_data = audio_chart.getAudioDataAt(indexPath.row)
         setAudioCellData(cell, audio_data:cur_audio_data, index:indexPath.row)
@@ -57,10 +57,10 @@ class AudioChartTableViewController: UITableViewController, UISearchBarDelegate
         return cell
     }
     
-    func setAudioCellData(cell:AudioChartTableViewCell, audio_data:Audio, index:Int)
+    func setAudioCellData(_ cell:AudioChartTableViewCell, audio_data:Audio, index:Int)
     {
         //set artwork image
-        let url = NSURL(string: audio_data.artwork_url)
+        let url = URL(string: audio_data.artwork_url)
         cell.artwork_view.hnk_setImageFromURL(url!, placeholder: nil, format: nil, failure: nil) { data in
             //after loading
             //set artwork
@@ -68,7 +68,7 @@ class AudioChartTableViewController: UITableViewController, UISearchBarDelegate
             self.audio_image_array[index] = data
             
             //set artwork bg
-            cell.bg_artwork_view.image =  Toucan(image:data).resize(CGSize(width: 600, height: 136), fitMode: Toucan.Resize.FitMode.Crop).image
+            cell.bg_artwork_view.image =  Toucan(image:data).resize(CGSize(width: 600, height: 136), fitMode: Toucan.Resize.FitMode.crop).image
             
             if cell.overlayed
             {
@@ -95,7 +95,7 @@ class AudioChartTableViewController: UITableViewController, UISearchBarDelegate
         cell.play_button.tag = index
     }
     
-    @IBAction func onPlayButton(sender: UIButton)
+    @IBAction func onPlayButton(_ sender: UIButton)
     {
         let audio_index = sender.tag
         if(delegate?.isPlaying() == true && (prev_index == audio_index))
@@ -113,12 +113,12 @@ class AudioChartTableViewController: UITableViewController, UISearchBarDelegate
         //send audio data
         delegate?.setViewAudioDatas(audio_data, chart_type: self.chart_type!)
     }
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
         if(segue.identifier == "showAudioDetailView")
         {
             //set data
-            let audioDetailViewController = (segue.destinationViewController as! AudioDetailViewController)
+            let audioDetailViewController = (segue.destination as! AudioDetailViewController)
             //set audio data
             let audio_data = audio_chart.getAudioDataAt(sender as! Int)
             audioDetailViewController.audio_data = audio_data
@@ -127,7 +127,7 @@ class AudioChartTableViewController: UITableViewController, UISearchBarDelegate
         }
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
         let audio_data = audio_chart.getAudioDataAt(indexPath.row)
         
@@ -135,12 +135,12 @@ class AudioChartTableViewController: UITableViewController, UISearchBarDelegate
         {
             delegate?.playAudioWith(audio_data)
         }
-        performSegueWithIdentifier("showAudioDetailView", sender: indexPath.row)
+        performSegue(withIdentifier: "showAudioDetailView", sender: indexPath.row)
     }
     
     func reloadData()
     {
-        dispatch_async(dispatch_get_main_queue()) {
+        DispatchQueue.main.async {
             self.tableView.reloadData()
         }
     }

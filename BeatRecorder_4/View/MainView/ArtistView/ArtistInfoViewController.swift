@@ -18,31 +18,31 @@ class ArtistInfoViewController: AudioChartViewController
         
         //customize prev button
         let prevBtn = UIImage(named:"nav_bar_prev_button")
-        self.navigationController?.navigationBar.backIndicatorImage = Toucan(image:prevBtn!).resize(CGSize(width: 14, height: 25), fitMode: Toucan.Resize.FitMode.Scale).image
+        self.navigationController?.navigationBar.backIndicatorImage = Toucan(image:prevBtn!).resize(CGSize(width: 14, height: 25), fitMode: Toucan.Resize.FitMode.scale).image
         self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = prevBtn
-        self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+        self.navigationController?.navigationBar.tintColor = UIColor.white
         
         self.title = artist_data.name
     }
     
-    override func preferredStatusBarStyle() -> UIStatusBarStyle
+    override var preferredStatusBarStyle : UIStatusBarStyle
     {
-        return UIStatusBarStyle.LightContent
+        return UIStatusBarStyle.lightContent
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
         self.chart_type = 1
         print(self.loaded_chart)
         //set loaded chart to loaded mixtape list
         //        self.loaded_chart = CHART_DATA.artist_list
         
-        super.prepareForSegue(segue, sender: sender)
+        super.prepare(for: segue, sender: sender)
         
         let segueName = segue.identifier
         if segueName == "ArtistProfileSegue"
         {
-            (segue.destinationViewController as! ArtistProfileViewController).artist_data = artist_data
+            (segue.destination as! ArtistProfileViewController).artist_data = artist_data
         }
     }
     

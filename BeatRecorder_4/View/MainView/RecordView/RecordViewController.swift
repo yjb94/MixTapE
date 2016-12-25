@@ -41,15 +41,15 @@ class RecordViewController : UIViewController, UITextViewDelegate
         
         if audio_data == nil
         {
-            self.dismissViewControllerAnimated(false, completion: nil)
+            self.dismiss(animated: false, completion: nil)
             return
         }
         
         //image setting
-        let url = NSURL(string: audio_data.artwork_url)
+        let url = URL(string: audio_data.artwork_url)
         self.bg_image_view.hnk_setImageFromURL(url!, placeholder: nil, format: nil, failure: nil) { data in
             //set artwork bg
-            self.bg_image_view.image =  Toucan(image:data).resize(CGSize(width: self.view.bounds.width, height: self.view.bounds.height), fitMode: Toucan.Resize.FitMode.Crop).image
+            self.bg_image_view.image =  Toucan(image:data).resize(CGSize(width: self.view.bounds.width, height: self.view.bounds.height), fitMode: Toucan.Resize.FitMode.crop).image
             
             let overlay = UIView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: self.view.bounds.height))
             overlay.backgroundColor = UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.7)
@@ -61,20 +61,20 @@ class RecordViewController : UIViewController, UITextViewDelegate
         lyrics_text_view.delegate = self
         placeholderLabel = UILabel()
         placeholderLabel.text = "Enter your Lyrics here..."
-        placeholderLabel.font = UIFont.italicSystemFontOfSize(lyrics_text_view.font!.pointSize)
+        placeholderLabel.font = UIFont.italicSystemFont(ofSize: lyrics_text_view.font!.pointSize)
         placeholderLabel.sizeToFit()
         lyrics_text_view.addSubview(placeholderLabel)
-        placeholderLabel.frame.origin = CGPointMake(5, lyrics_text_view.font!.pointSize / 2)
+        placeholderLabel.frame.origin = CGPoint(x: 5, y: lyrics_text_view.font!.pointSize / 2)
         placeholderLabel.textColor = UIColor.init(netHex: 0xa2a2a2)
-        placeholderLabel.hidden = !lyrics_text_view.text.isEmpty
+        placeholderLabel.isHidden = !lyrics_text_view.text.isEmpty
         
         
         //radio button setting
-        dance_button.selected = false
-        edge_button.selected = false
-        natural_button.selected = false
-        bright_button.selected = false
-        custom_button.selected = false
+        dance_button.isSelected = false
+        edge_button.isSelected = false
+        natural_button.isSelected = false
+        bright_button.isSelected = false
+        custom_button.isSelected = false
         
         dance_button?.alternateButton = [edge_button!, natural_button!, bright_button!, custom_button!]
         edge_button?.alternateButton = [dance_button!, natural_button!, bright_button!, custom_button!]
@@ -98,24 +98,24 @@ class RecordViewController : UIViewController, UITextViewDelegate
         playback_slider.minimumValue = 0
         playback_slider.maximumValue = Float(AudioController.sharedInstance.getAudioDuration(audio_key))
         playback_slider.value = Float(AudioController.sharedInstance.getAudioCurrentTime(audio_key))
-        playback_slider.addTarget(self, action: #selector(RecordViewController.sliderValueChanged(_:)), forControlEvents: .ValueChanged)
+        playback_slider.addTarget(self, action: #selector(RecordViewController.sliderValueChanged(_:)), for: .valueChanged)
         
         //set thumb
         let thumb_img = UIImage(named: "playback_thumb.png")!
-        playback_slider.setThumbImage(Toucan(image:thumb_img).resize(CGSize(width: 15, height: 15), fitMode: Toucan.Resize.FitMode.Scale).image, forState: .Normal)
+        playback_slider.setThumbImage(Toucan(image:thumb_img).resize(CGSize(width: 15, height: 15), fitMode: Toucan.Resize.FitMode.scale).image, for: .normal)
         
         //playback 용 타이머
-        let loop_timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(RecordViewController.progressTimer), userInfo: nil, repeats: true)
-        NSRunLoop.currentRunLoop().addTimer(loop_timer, forMode: NSRunLoopCommonModes)
+        let loop_timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(RecordViewController.progressTimer), userInfo: nil, repeats: true)
+        RunLoop.current.add(loop_timer, forMode: RunLoopMode.commonModes)
     }
     
-    func sliderValueChanged(sender:UISlider)
+    func sliderValueChanged(_ sender:UISlider)
     {
         if audio_key == ""
         {
             return
         }
-        AudioController.sharedInstance.audioAtTime(NSTimeInterval(sender.value), key: audio_key)
+        AudioController.sharedInstance.audioAtTime(TimeInterval(sender.value), key: audio_key)
 //        AudioController.sharedInstance.play(true, key: audio_key)
     }
     
@@ -145,11 +145,11 @@ class RecordViewController : UIViewController, UITextViewDelegate
         AudioController.sharedInstance.addPlaythrough()
     }
     
-    func textViewDidChange(textView: UITextView)
+    func textViewDidChange(_ textView: UITextView)
     {
-        placeholderLabel.hidden = !textView.text.isEmpty
+        placeholderLabel.isHidden = !textView.text.isEmpty
     }
-    override func viewWillAppear(animated: Bool)
+    override func viewWillAppear(_ animated: Bool)
     {
         super.viewWillAppear(animated)
         
@@ -166,88 +166,88 @@ class RecordViewController : UIViewController, UITextViewDelegate
         // Dispose of any resources that can be recreated.
     }
     
-    override func preferredStatusBarStyle() -> UIStatusBarStyle
+    override var preferredStatusBarStyle : UIStatusBarStyle
     {
-        return UIStatusBarStyle.LightContent
+        return UIStatusBarStyle.lightContent
     }
     
-    @IBAction func onRecordStartStop(sender: UIButton)
+    @IBAction func onRecordStartStop(_ sender: UIButton)
     {
         if(!AudioController.sharedInstance.isRecording())
         {
             AudioController.sharedInstance.startRecord(0, key: audio_key)
-            record_button.setImage(UIImage(named:"record_stop_button.png"),forState:UIControlState.Normal)
+            record_button.setImage(UIImage(named:"record_stop_button.png"),for:UIControlState())
         }
         else
         {
             AudioController.sharedInstance.stopRecord()
-            record_button.setImage(UIImage(named:"record_start_button.png"),forState:UIControlState.Normal)
+            record_button.setImage(UIImage(named:"record_start_button.png"),for:UIControlState())
         }
     }
     
-    @IBAction func onAudioPlayPause(sender: UIButton)
+    @IBAction func onAudioPlayPause(_ sender: UIButton)
     {
         is_playing = AudioController.sharedInstance.playPause(audio_key)
         
         if(is_playing)
         {
             AudioController.sharedInstance.playRecording(0)
-            playpause_button.setImage(UIImage(named:"record_pasue_button.png"),forState:UIControlState.Normal)
+            playpause_button.setImage(UIImage(named:"record_pasue_button.png"),for:UIControlState())
         }
         else
         {
-            playpause_button.setImage(UIImage(named:"record_play_button.png"),forState:UIControlState.Normal)
+            playpause_button.setImage(UIImage(named:"record_play_button.png"),for:UIControlState())
         }
     }
         
-    @IBAction func onDoneClicked(sender: UIButton)
+    @IBAction func onDoneClicked(_ sender: UIButton)
     {
         
     }
     
-    @IBAction func onCloseButton(sender: UIButton)
+    @IBAction func onCloseButton(_ sender: UIButton)
     {
-        self.dismissViewControllerAnimated(true, completion:{
+        self.dismiss(animated: true, completion:{
         })
     }
-    @IBAction func onFilterSelected(sender: UIButton)
+    @IBAction func onFilterSelected(_ sender: UIButton)
     {
         audio_mixer.dynamics.removeFilter()
         audio_mixer.equalizer.removeFilter()
         audio_mixer.chorus.removeFilter()
         audio_mixer.sends.removeFilter()
         
-        if dance_button.selected
+        if dance_button.isSelected
         {
             audio_mixer.sends.setReverb(40, ambience: 1)
             audio_mixer.chorus.setChorus(0.001)
         }
-        else if edge_button.selected
+        else if edge_button.isSelected
         {
             audio_mixer.dynamics.setCompression(0.001)
             audio_mixer.sends.setReverb(20, ambience: 0)
         }
-        else if natural_button.selected
+        else if natural_button.isSelected
         {
             audio_mixer.sends.setReverb(40, ambience: 1)
         }
-        else if bright_button.selected
+        else if bright_button.isSelected
         {
             audio_mixer.sends.setReverb(80, ambience: 0)
         }
-        else if custom_button.selected
+        else if custom_button.isSelected
         {
             audio_mixer.sends.setReverb(40, ambience: 1)
             audio_mixer.equalizer.setEQ(0.5, high_amout: 0.5)
         }
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
         if segue.identifier == "showUploadView"
         {
             //set data
-            let uploadViewController = (segue.destinationViewController as! UploadViewController)
+            let uploadViewController = (segue.destination as! UploadViewController)
             //set audio data
             uploadViewController.audio_data = self.audio_data
             uploadViewController.audio_key = audio_key
@@ -255,7 +255,7 @@ class RecordViewController : UIViewController, UITextViewDelegate
         }
     }
     
-    override func viewDidDisappear(animated: Bool)
+    override func viewDidDisappear(_ animated: Bool)
     {
         audio_mixer.dynamics.removeFilter()
         audio_mixer.equalizer.removeFilter()

@@ -32,7 +32,7 @@ class Dynamics
         
     }
     
-    func setCompression(amount:Float)
+    func setCompression(_ amount:Float)
     {
         removeFilter()
         
@@ -64,7 +64,7 @@ class Eq
         }
     }
     
-    func setEQ(low_amount:Double=0.0, high_amout:Double=0.0)
+    func setEQ(_ low_amount:Double=0.0, high_amout:Double=0.0)
     {
         removeFilter()
         
@@ -94,7 +94,7 @@ class Chorus
         }
     }
     
-    func setChorus(amount:Double)
+    func setChorus(_ amount:Double)
     {
         self.amount = amount
         
@@ -122,7 +122,7 @@ class Sends
         }
     }
     
-    func setReverb(amount:Double=40.0, ambience:Double=0.0)
+    func setReverb(_ amount:Double=40.0, ambience:Double=0.0)
     {
         self.amount = amount
         self.ambience = ambience

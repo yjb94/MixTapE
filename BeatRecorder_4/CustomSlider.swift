@@ -10,11 +10,11 @@ import UIKit
 
 class CustomSlider: UISlider
 {
-    override func trackRectForBounds(bounds: CGRect) -> CGRect
+    override func trackRect(forBounds bounds: CGRect) -> CGRect
     {
         //keeps original origin and width, changes height, you get the idea
         let customBounds = CGRect(origin: bounds.origin, size: CGSize(width: bounds.size.width, height: 1.0))
-        super.trackRectForBounds(customBounds)
+        super.trackRect(forBounds: customBounds)
         return customBounds
     }
 }

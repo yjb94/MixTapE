@@ -9,6 +9,30 @@
 import UIKit
 import Alamofire
 import Haneke
+// FIXME: comparison operators with optionals were removed from the Swift Standard Libary.
+// Consider refactoring the code to use the non-optional operators.
+fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l < r
+  case (nil, _?):
+    return true
+  default:
+    return false
+  }
+}
+
+// FIXME: comparison operators with optionals were removed from the Swift Standard Libary.
+// Consider refactoring the code to use the non-optional operators.
+fileprivate func >= <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l >= r
+  default:
+    return !(lhs < rhs)
+  }
+}
+
 
 class LoginViewController: UIViewController
 {
@@ -19,7 +43,7 @@ class LoginViewController: UIViewController
     
     @IBOutlet weak var forgot_button: UIButton!
     
-    override func viewWillAppear(animated: Bool)
+    override func viewWillAppear(_ animated: Bool)
     {
         super.viewWillAppear(animated)
     }
@@ -31,14 +55,14 @@ class LoginViewController: UIViewController
         HUDController.sharedInstance.show(view)
         let cache = Shared.dataCache
         cache.fetch(key: USER_DATA.AUTO_LOGIN_KEY).onSuccess { data in
-            USER_DATA.auto_login = String(data:data, encoding:NSUTF8StringEncoding)!
+            USER_DATA.auto_login = String(data:data, encoding:String.Encoding.utf8)!
             if(USER_DATA.auto_login == "TRUE")
             {
                 cache.fetch(key: USER_DATA.USER_KEY).onSuccess { user_data in
                     
-                    let dict = Utils.convertStringToDictionary(String(data:user_data, encoding:NSUTF8StringEncoding)!)!
+                    let dict = Utils.convertStringToDictionary(String(data:user_data, encoding:String.Encoding.utf8)!)!
                     
-                    let user = Artist(seq: dict["sequence"] as! Int, name: String(dict["nickname"]!), profile_url: String(dict["profile_url"]!), thumbnail_url: String(dict["thumbnail_url"]!), email: String(dict["email"]!), password: String(dict["password"]!))
+                    let user = Artist(seq: dict["sequence"] as! Int, name: dict["nickname"]! as! String, profile_url:dict["profile_url"]! as! String, thumbnail_url: dict["thumbnail_url"]! as! String, email: dict["email"]! as! String, password: dict["password"]! as! String)
                     
                     self.completeLoading(user)
                 }
@@ -50,10 +74,10 @@ class LoginViewController: UIViewController
             print(err.debugDescription)
             HUDController.sharedInstance.dismiss()
         }
-        forgot_button.enabled = false
+        forgot_button.isEnabled = false
     }
     
-    func completeLoading(user:User)
+    func completeLoading(_ user:User)
     {
         USER_DATA.user = user
         
@@ -62,7 +86,7 @@ class LoginViewController: UIViewController
             if i >= 3
             {
                 HUDController.sharedInstance.dismiss()
-                self.performSegueWithIdentifier("mainTabBarView", sender: self)
+                self.performSegue(withIdentifier: "mainTabBarView", sender: self)
             }
         }
         
@@ -71,7 +95,7 @@ class LoginViewController: UIViewController
             if i >= 3
             {
                 HUDController.sharedInstance.dismiss()
-                self.performSegueWithIdentifier("mainTabBarView", sender: self)
+                self.performSegue(withIdentifier: "mainTabBarView", sender: self)
             }
         }
         
@@ -80,13 +104,13 @@ class LoginViewController: UIViewController
             if i >= 3
             {
                 HUDController.sharedInstance.dismiss()
-                self.performSegueWithIdentifier("mainTabBarView", sender: self)
+                self.performSegue(withIdentifier: "mainTabBarView", sender: self)
             }
         }
 
     }
     
-    override func prefersStatusBarHidden() -> Bool
+    override var prefersStatusBarHidden : Bool
     {
         return true
     }
@@ -96,23 +120,23 @@ class LoginViewController: UIViewController
         super.didReceiveMemoryWarning()
     }
     
-    @IBAction func onForgotPasswordClicked(sender: AnyObject)
+    @IBAction func onForgotPasswordClicked(_ sender: AnyObject)
     {
     }
-    @IBAction func onLoginButtonClicked(sender:AnyObject)
+    @IBAction func onLoginButtonClicked(_ sender:AnyObject)
     {
         if(!checkLoginError())  //no error
         {
             let params:[String : AnyObject] = [
-                "email": email_textfield.text!,
-                "password":password_textfield.text!
+                "email": email_textfield.text! as AnyObject,
+                "password":password_textfield.text! as AnyObject
             ]
             HUDController.sharedInstance.show(self.view)
-            Alamofire.request(.POST, SERVER_URL+"api/login", parameters:params , encoding: ParameterEncoding.JSON).responseJSON { response in
+            Alamofire.request(SERVER_URL+"api/login", method: .post, parameters:params , encoding: JSONEncoding.default).responseJSON { response in
                 HUDController.sharedInstance.dismiss()
                 switch response.result
                 {
-                case .Success:
+                case .success:
                     //save json datas
                     if let JSON = response.result.value
                     {
@@ -122,23 +146,23 @@ class LoginViewController: UIViewController
                         let cache = Shared.dataCache
                         do
                         {
-                            try cache.set(value: NSJSONSerialization.dataWithJSONObject(dict, options: NSJSONWritingOptions.PrettyPrinted), key: USER_DATA.USER_KEY)
+                            try cache.set(value: JSONSerialization.data(withJSONObject: dict, options: JSONSerialization.WritingOptions.prettyPrinted), key: USER_DATA.USER_KEY)
                         }
                         catch
                         {
                             print("error serializing")
                         }
                         
-                        let user = Artist(seq: dict["sequence"] as! Int, name: String(dict["nickname"]!), profile_url: String(dict["profile_url"]!), thumbnail_url: String(dict["thumbnail_url"]!), email: String(dict["email"]!), password: String(dict["password"]!))
+                        let user = Artist(seq: dict["sequence"] as! Int, name: dict["nickname"]! as! String, profile_url: dict["profile_url"]! as! String, thumbnail_url: dict["thumbnail_url"]! as! String, email: dict["email"]! as! String, password: dict["password"]! as! String)
                         
-                        Shared.dataCache.set(value: USER_DATA.auto_login.dataUsingEncoding(NSUTF8StringEncoding)!, key: USER_DATA.AUTO_LOGIN_KEY)
+                        Shared.dataCache.set(value: USER_DATA.auto_login.data(using: String.Encoding.utf8)!, key: USER_DATA.AUTO_LOGIN_KEY)
                         
                         self.completeLoading(user)
                     }
                     
-                case .Failure( _):
+                case .failure( _):
                     print(response.result.description)
-                    self.performSegueWithIdentifier("showJoinView", sender: self)
+                    self.performSegue(withIdentifier: "showJoinView", sender: self)
                 }
             }
         }
@@ -181,11 +205,11 @@ class LoginViewController: UIViewController
         return false
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
         if(segue.identifier == "showJoinView")
         {
-            let nextViewController = (segue.destinationViewController as! JoinViewController)
+            let nextViewController = (segue.destination as! JoinViewController)
             nextViewController.email_save = email_textfield.text!
             nextViewController.password_save = password_textfield.text!
         }

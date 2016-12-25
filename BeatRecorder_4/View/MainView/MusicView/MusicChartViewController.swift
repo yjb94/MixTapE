@@ -14,15 +14,15 @@ class MusicChartViewController: AudioChartViewController
     
     override func viewDidLoad()
     {
-        print(temp)
+//        print(temp)
         super.viewDidLoad()
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
         self.chart_type = 2
         self.loaded_chart = CHART_DATA.mixtape_list
         
-        super.prepareForSegue(segue, sender: sender)
+        super.prepare(for: segue, sender: sender)
     }
 }

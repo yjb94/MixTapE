@@ -24,7 +24,7 @@ class MainTabBarViewController: UITabBarController, UITabBarControllerDelegate
         // Dispose of any resources that can be recreated.
     }
     
-    override func tabBar(tabBar: UITabBar, didSelectItem item: UITabBarItem)
+    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem)
     {
         if(item.title == "CHART")
         {

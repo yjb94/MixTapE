@@ -28,13 +28,13 @@ class AudioController
     
     init()
     {
-        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
         self.audio_controller = appDelegate.audio_controller
         
         record_channel = audio_controller.createChannelGroup()
     }
     
-    func playAudioWith(audio:Audio, callback:(key:String)->Void = { _ in })
+    func playAudioWith(_ audio:Audio, callback:@escaping (_ key:String)->Void = { _ in })
     {
         if(audio.local_file_path == nil) //저장된게 없음
         {
@@ -47,7 +47,7 @@ class AudioController
                         {
                             m.local_file_path = path
                             self.audio_data_list[m.id] = m
-                            callback(key:m.id)
+                            callback(m.id)
                         }
                 })
             }
@@ -60,25 +60,25 @@ class AudioController
                         {
                             b.local_file_path = path
                             self.audio_data_list[b.id] = b
-                            callback(key:b.id)
+                            callback(b.id)
                         }
                 })
             }
         }
         else    //저장된게 있으면 그냥 재생
         {
-            if !(initAudioPlayerWith(audio.local_file_path, key:audio.id))
+            if !(initAudioPlayerWith(audio.local_file_path as URL!, key:audio.id))
             {
                 audio.local_file_path = nil
             }
         }
     }
     
-    func initAudioPlayerWith(path:NSURL!, key:String) ->Bool
+    func initAudioPlayerWith(_ path:URL!, key:String) ->Bool
     {
         do
         {
-            let audio_player = try AEAudioFilePlayer(URL:path)
+            let audio_player = try AEAudioFilePlayer(url:path)
             audio_player.volume = 1.0
             audio_player_list[key] = audio_player
             
@@ -91,7 +91,7 @@ class AudioController
         }
         return false;
     }
-    func play(tf:Bool, key:String)
+    func play(_ tf:Bool, key:String)
     {
         if audio_player_list[key] != nil
         {
@@ -99,7 +99,7 @@ class AudioController
         }
     }
     
-    func playPause(key:String) -> Bool
+    func playPause(_ key:String) -> Bool
     {
         if audio_player_list[key] == nil
         {
@@ -117,7 +117,7 @@ class AudioController
         return (self.audio_player_list[key] as! AEAudioFilePlayer).channelIsPlaying
     }
     
-    func isPlaying(key:String) -> Bool
+    func isPlaying(_ key:String) -> Bool
     {
         if(audio_player_list.count == 0)
         {
@@ -130,24 +130,24 @@ class AudioController
         return false
     }
     
-    func stopAudio(key:String)
+    func stopAudio(_ key:String)
     {
         //정지
         if audio_player_list[key] != nil
         {
             audio_controller.removeChannels([audio_player_list[key]!])
             audio_player_list[key] = nil
-            audio_player_list.removeObjectForKey(key)
+            audio_player_list.removeObject(forKey: key)
         }
     }
-    func audioAtTime(time:NSTimeInterval, key:String)
+    func audioAtTime(_ time:TimeInterval, key:String)
     {
         if audio_player_list[key] != nil
         {
             (self.audio_player_list[key] as! AEAudioFilePlayer).currentTime = time
         }
     }
-    func getAudioCurrentTime(key:String) -> NSTimeInterval
+    func getAudioCurrentTime(_ key:String) -> TimeInterval
     {
         if audio_player_list[key] != nil
         {
@@ -155,7 +155,7 @@ class AudioController
         }
         return 0
     }
-    func getPlaybackTime(key:String) -> Float
+    func getPlaybackTime(_ key:String) -> Float
     {
         if audio_player_list[key] != nil
         {
@@ -164,7 +164,7 @@ class AudioController
         }
         return 0
     }
-    func getAudioData(key:String) -> Audio?
+    func getAudioData(_ key:String) -> Audio?
     {
         if audio_data_list[key] != nil
         {
@@ -172,7 +172,7 @@ class AudioController
         }
         return nil
     }
-    func getAudioDuration(key:String) -> NSTimeInterval
+    func getAudioDuration(_ key:String) -> TimeInterval
     {
         if audio_player_list[key] != nil
         {
@@ -210,7 +210,7 @@ class AudioController
         audio_playthrough = nil
     }
     
-    func applyFilter(filter:AEAudioFilter)
+    func applyFilter(_ filter:AEAudioFilter)
     {
         if record_channel == nil
         {
@@ -221,7 +221,7 @@ class AudioController
         audio_controller.addFilter(filter, toChannelGroup: record_channel!)
     }
     
-    func removeFilter(filter:AEAudioFilter)
+    func removeFilter(_ filter:AEAudioFilter)
     {
         if record_channel == nil
         {
@@ -232,7 +232,7 @@ class AudioController
         audio_controller.removeFilter(filter, fromChannelGroup: record_channel!)
     }
     
-    func startRecord(index:Int, key:String)
+    func startRecord(_ index:Int, key:String)
     {
         if isRecording()
         {
@@ -244,13 +244,13 @@ class AudioController
         {
             audio_recorder = AERecorder.init(audioController: audio_controller)
             
-            let documentsUrl = try! NSFileManager.defaultManager().URLForDirectory(.DocumentDirectory, inDomain: .UserDomainMask , appropriateForURL: nil, create: true)
-            let destination = documentsUrl.URLByAppendingPathComponent("recordings" + String(index) + ".m4a", isDirectory: true)
+            let documentsUrl = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask , appropriateFor: nil, create: true)
+            let destination = documentsUrl.appendingPathComponent("recordings" + String(index) + ".m4a", isDirectory: true)
             let url = destination.path
             
             //check file path valid
             
-            try audio_recorder?.beginRecordingToFileAtPath(url, fileType: kAudioFileM4AType)
+            try audio_recorder?.beginRecordingToFile(atPath: url, fileType: kAudioFileM4AType)
             record_playtime_list[index] = getAudioCurrentTime(key)
             print(AECurrentTimeInHostTicks())
             audio_controller.addInputReceiver(audio_recorder)
@@ -291,15 +291,15 @@ class AudioController
         return false
     }
     
-    func playRecording(index:Int)
+    func playRecording(_ index:Int)
     {
         if !isRecording()
         {
-            let documentsUrl = try! NSFileManager.defaultManager().URLForDirectory(.DocumentDirectory, inDomain: .UserDomainMask , appropriateForURL: nil, create: true)
-            let destination = documentsUrl.URLByAppendingPathComponent("recordings" + String(index) + ".m4a", isDirectory: true)
+            let documentsUrl = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask , appropriateFor: nil, create: true)
+            let destination = documentsUrl.appendingPathComponent("recordings" + String(index) + ".m4a", isDirectory: true)
             let url = destination.path
             
-            if !NSFileManager().fileExistsAtPath(url!)
+            if !FileManager().fileExists(atPath: url)
             {
                 print("no file")
                 return
@@ -307,13 +307,13 @@ class AudioController
             
             do
             {
-                let record_player = try AEAudioFilePlayer(URL:destination)
+                let record_player = try AEAudioFilePlayer(url:destination)
                 record_player.volume = 1.0
                 record_player.removeUponFinish = true
                 
                 if record_player_list[index] != nil
                 {
-                    record_player.playAtTime(AECurrentTimeInHostTicks())
+                    record_player.play(atTime: AECurrentTimeInHostTicks())
                 }
                 self.audio_controller.addChannels([record_player], toChannelGroup: record_channel!)
                 

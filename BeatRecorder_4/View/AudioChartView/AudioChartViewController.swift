@@ -14,7 +14,7 @@ protocol AudioChartContainerDelegateProtocol
 {
     func getAudioChart() -> Chart
     
-    func playAudioWith(audio:Audio)
+    func playAudioWith(_ audio:Audio)
     func isPlaying() -> Bool?
     func stopAudio()
     func playPauseAudio() -> Bool
@@ -24,7 +24,7 @@ protocol AudioChartContainerDelegateProtocol
     
     func appearAnimated()
     func disappearAnimated()
-    func setViewAudioDatas(audio:Audio, chart_type:Int)
+    func setViewAudioDatas(_ audio:Audio, chart_type:Int)
 }
 
 class AudioChartViewController : UIViewController, AudioChartContainerDelegateProtocol
@@ -48,7 +48,7 @@ class AudioChartViewController : UIViewController, AudioChartContainerDelegatePr
         self.audio_player_view.frame.origin.x = -self.audio_player_view.frame.width
         self.audio_player_view.alpha = 0.0
     }
-    override func viewWillAppear(animated: Bool)
+    override func viewWillAppear(_ animated: Bool)
     {
         super.viewWillAppear(animated)
     }
@@ -59,19 +59,19 @@ class AudioChartViewController : UIViewController, AudioChartContainerDelegatePr
         // Dispose of any resources that can be recreated.
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
         let segueName = segue.identifier
         
         if segueName == "AudioChartTableSegue"
         {
-            (segue.destinationViewController as! AudioChartTableViewController).delegate = self;
-            (segue.destinationViewController as! AudioChartTableViewController).chart_type = chart_type
+            (segue.destination as! AudioChartTableViewController).delegate = self;
+            (segue.destination as! AudioChartTableViewController).chart_type = chart_type
         }
         else if segueName == "MiniAudioPlayerSegue"
         {
-            (segue.destinationViewController as! MiniAudioPlayerViewController).delegate = self;
-            (segue.destinationViewController as! MiniAudioPlayerViewController).chart_type = chart_type;
+            (segue.destination as! MiniAudioPlayerViewController).delegate = self;
+            (segue.destination as! MiniAudioPlayerViewController).chart_type = chart_type;
         }
     }
     func getAudioChart() -> Chart
@@ -79,7 +79,7 @@ class AudioChartViewController : UIViewController, AudioChartContainerDelegatePr
         return loaded_chart
     }
     
-    func setViewAudioDatas(audio:Audio, chart_type:Int)
+    func setViewAudioDatas(_ audio:Audio, chart_type:Int)
     {
         //set Miniplayer
         
@@ -95,7 +95,7 @@ class AudioChartViewController : UIViewController, AudioChartContainerDelegatePr
             if view.tag == 1
             {
                 let artwork_view = view as! UIImageView
-                let url = NSURL(string: audio.artwork_url)
+                let url = URL(string: audio.artwork_url)
                 artwork_view.hnk_setImageFromURL(url!)
             }
             //title label
@@ -120,7 +120,7 @@ class AudioChartViewController : UIViewController, AudioChartContainerDelegatePr
             self.audio_player_view.frame.origin.x = -self.audio_player_view.frame.width
         }
         //display animated
-        UIView.animateWithDuration(self.ANIMA_SPEED, animations: {
+        UIView.animate(withDuration: self.ANIMA_SPEED, animations: {
             self.audio_player_view.frame.origin.x = 0
             self.audio_player_view.alpha = 1
         })
@@ -129,14 +129,14 @@ class AudioChartViewController : UIViewController, AudioChartContainerDelegatePr
     func disappearAnimated()
     {
         //display animated
-        UIView.animateWithDuration(self.ANIMA_SPEED, animations: {
+        UIView.animate(withDuration: self.ANIMA_SPEED, animations: {
             self.audio_player_view.frame.origin.x = -self.audio_player_view.bounds.width
             self.audio_player_view.alpha = 0
             }, completion: { finished in
         })
     }
     
-    func playAudioWith(audio: Audio)
+    func playAudioWith(_ audio: Audio)
     {
         if cur_audio_key != ""
         {

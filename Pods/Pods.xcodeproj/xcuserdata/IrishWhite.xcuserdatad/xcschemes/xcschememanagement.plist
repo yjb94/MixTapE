@@ -19,11 +19,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>NVActivityIndicatorView.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-BeatRecorder_4.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,17 +37,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1050D0EC414FE21BC2DBF2E15EA9A83D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>1293F806F14BACC24F2CEBC86CF5F815</key>
+		<key>0BD01D27F7371D1265297E06E45CB11F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>2C2B1953A91633859BF7AD238FF567A0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3351DDB39DC6A489EF80B6C4DD12B226</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3CABE8A5967768D586A64290FDE03D06</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -63,16 +63,6 @@
 			<true/>
 		</dict>
 		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8698C4558AE758AD92477EC134E714F7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8A74E8D30D19D2B74FC4AFE7F141292D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

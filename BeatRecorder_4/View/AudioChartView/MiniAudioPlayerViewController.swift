@@ -32,28 +32,28 @@ class MiniAudioPlayerViewController : UIViewController
         //only apply the blur if the user hasn't disabled transparency effects
         if !UIAccessibilityIsReduceTransparencyEnabled()
         {
-            self.view.backgroundColor = UIColor.clearColor()
+            self.view.backgroundColor = UIColor.clear
             
-            let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.Dark)
+            let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.dark)
             let blurEffectView = UIVisualEffectView(effect: blurEffect)
             //always fill the view
             blurEffectView.frame = self.view.bounds
-            blurEffectView.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
+            blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
             
-            self.view.insertSubview(blurEffectView, atIndex: 0) //if you have more UIViews, use an insertSubview API to place it where needed
+            self.view.insertSubview(blurEffectView, at: 0) //if you have more UIViews, use an insertSubview API to place it where needed
         }
         else
         {
-            self.view.backgroundColor = UIColor.blackColor()
+            self.view.backgroundColor = UIColor.black
         }
         
         //progress bar 용 타이머
-        let loop_timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(MiniAudioPlayerViewController.progressTimer), userInfo: nil, repeats: true)
-        NSRunLoop.currentRunLoop().addTimer(loop_timer, forMode: NSRunLoopCommonModes)
+        let loop_timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(MiniAudioPlayerViewController.progressTimer), userInfo: nil, repeats: true)
+        RunLoop.current.add(loop_timer, forMode: RunLoopMode.commonModes)
         
         //add remove gesture
         let swipe = UISwipeGestureRecognizer(target: self, action: #selector(MiniAudioPlayerViewController.respondToSwipeGesture(_:)))
-        swipe.direction = UISwipeGestureRecognizerDirection.Left
+        swipe.direction = UISwipeGestureRecognizerDirection.left
         self.view.addGestureRecognizer(swipe)
         
         //add tap gesture
@@ -67,7 +67,7 @@ class MiniAudioPlayerViewController : UIViewController
             music_progress_bar.progress = (delegate?.getPlaybackTime())!
         }
     }
-    override func viewWillAppear(animated: Bool)
+    override func viewWillAppear(_ animated: Bool)
     {
         super.viewWillAppear(animated)
         
@@ -80,45 +80,45 @@ class MiniAudioPlayerViewController : UIViewController
         
         if(is_playing)
         {
-            playpause_button.setImage(UIImage(named:"audio_pause_circle.png"),forState:UIControlState.Normal)
+            playpause_button.setImage(UIImage(named:"audio_pause_circle.png"),for:UIControlState())
         }
         else
         {
-            playpause_button.setImage(UIImage(named:"audio_play_circle.png"),forState:UIControlState.Normal)
+            playpause_button.setImage(UIImage(named:"audio_play_circle.png"),for:UIControlState())
         }
     }
     
-    @IBAction func onPlayPauseClick(sender: AnyObject)
+    @IBAction func onPlayPauseClick(_ sender: AnyObject)
     {
         is_playing = (delegate?.playPauseAudio())!
         
         if(is_playing)
         {
-            playpause_button.setImage(UIImage(named:"audio_pause_circle.png"),forState:UIControlState.Normal)
+            playpause_button.setImage(UIImage(named:"audio_pause_circle.png"),for:UIControlState())
         }
         else
         {
-            playpause_button.setImage(UIImage(named:"audio_play_circle.png"),forState:UIControlState.Normal)
+            playpause_button.setImage(UIImage(named:"audio_play_circle.png"),for:UIControlState())
         }
     }
     
-    func respondToSwipeGesture(gesture: UISwipeGestureRecognizer)
+    func respondToSwipeGesture(_ gesture: UISwipeGestureRecognizer)
     {
         delegate?.stopAudio()
         delegate?.disappearAnimated()
     }
     
-    func respondToTapGesture(gesture: UITapGestureRecognizer)
+    func respondToTapGesture(_ gesture: UITapGestureRecognizer)
     {
-        performSegueWithIdentifier("showAudioDetailView", sender: self)
+        performSegue(withIdentifier: "showAudioDetailView", sender: self)
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
         if(segue.identifier == "showAudioDetailView")
         {
             //set data
-            let audioDetailViewController = (segue.destinationViewController as! AudioDetailViewController)
+            let audioDetailViewController = (segue.destination as! AudioDetailViewController)
             audioDetailViewController.audio_data = delegate?.getAudioData()
             audioDetailViewController.audio_key = (delegate?.getAudioKey())!
             audioDetailViewController.chart_type = chart_type

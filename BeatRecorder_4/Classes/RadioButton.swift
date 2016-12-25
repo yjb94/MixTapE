@@ -16,10 +16,10 @@ class RadioButton: UIButton
     {
         self.layer.cornerRadius = 1
         self.layer.borderWidth = 0.4
-        self.layer.borderColor = UIColor.init(netHex: 0x00b2b2).CGColor
+        self.layer.borderColor = UIColor.init(netHex: 0x00b2b2).cgColor
         self.layer.masksToBounds = true
         
-        self.setTitleColor(UIColor.init(netHex: 0x00b2b2), forState: .Selected)
+        self.setTitleColor(UIColor.init(netHex: 0x00b2b2), for: .selected)
     }
     
     func unselectAlternateButtons()
@@ -28,7 +28,7 @@ class RadioButton: UIButton
         {
             for aButton:RadioButton in alternateButton!
             {
-                aButton.selected = false
+                aButton.isSelected = false
             }
         }
         else
@@ -37,28 +37,28 @@ class RadioButton: UIButton
         }
     }
     
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?)
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
     {
         unselectAlternateButtons()
         toggleButton()
-        super.touchesBegan(touches, withEvent: event)
+        super.touchesBegan(touches, with: event)
     }
     
     func toggleButton()
     {
-        self.selected = !selected
+        self.isSelected = !isSelected
     }
     
-    override var selected: Bool
+    override var isSelected: Bool
     {
         didSet {
-            if selected
+            if isSelected
             {
                 self.backgroundColor = UIColor.init(white: 1, alpha: 0.2)
             }
             else
             {
-                self.backgroundColor = UIColor.clearColor()
+                self.backgroundColor = UIColor.clear
             }
         }
     }

@@ -15,7 +15,7 @@ class HUDController: NSObject
     
     var hud:JGProgressHUD!
     
-    init(style:JGProgressHUDStyle=JGProgressHUDStyle.Dark, text:String = "")
+    init(style:JGProgressHUDStyle=JGProgressHUDStyle.dark, text:String = "")
     {
         self.hud = JGProgressHUD(style:style)
         if text != ""
@@ -24,14 +24,14 @@ class HUDController: NSObject
         }
     }
     
-    func show(in_view:UIView)
+    func show(_ in_view:UIView)
     {
-        self.hud.showInView(in_view)
+        self.hud.show(in: in_view)
     }
     
     func dismiss()
     {
-        self.hud.dismissAnimated(true)
+        self.hud.dismiss(animated: true)
     }
 }
         

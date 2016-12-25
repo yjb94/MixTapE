@@ -78,29 +78,29 @@ class Artist : User
         return dict
     }
     
-    func readFromDictionary(data_dic:NSDictionary)
+    func readFromDictionary(_ data_dic:NSDictionary)
     {
-        self.seq = data_dic.valueForKey("sequence") as? Int
+        self.seq = data_dic.value(forKey: "sequence") as? Int
         
-        if let email = data_dic.valueForKey("email") as? String
+        if let email = data_dic.value(forKey: "email") as? String
         {
             self.email = email
         }
-        if let password = data_dic.valueForKey("password") as? String
+        if let password = data_dic.value(forKey: "password") as? String
         {
             self.password = password
         }
-        if let profile_url = data_dic.valueForKey("profile_url") as? String
+        if let profile_url = data_dic.value(forKey: "profile_url") as? String
         {
             self.profile_url = profile_url
         }
         
-        if let thumbnail_url = data_dic.valueForKey("thumbnail_url") as? String
+        if let thumbnail_url = data_dic.value(forKey: "thumbnail_url") as? String
         {
             self.thumbnail_url = thumbnail_url
         }
         
-        if let nickname = data_dic.valueForKey("nickname") as? String
+        if let nickname = data_dic.value(forKey: "nickname") as? String
         {
             self.name = nickname
         }

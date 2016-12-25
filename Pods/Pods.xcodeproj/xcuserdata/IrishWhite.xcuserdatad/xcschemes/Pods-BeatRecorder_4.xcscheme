@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0820"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1050D0EC414FE21BC2DBF2E15EA9A83D"
+               BlueprintIdentifier = "3351DDB39DC6A489EF80B6C4DD12B226"
                BuildableName = "Pods_BeatRecorder_4.framework"
                BlueprintName = "Pods-BeatRecorder_4"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1050D0EC414FE21BC2DBF2E15EA9A83D"
+            BlueprintIdentifier = "3351DDB39DC6A489EF80B6C4DD12B226"
             BuildableName = "Pods_BeatRecorder_4.framework"
             BlueprintName = "Pods-BeatRecorder_4"
             ReferencedContainer = "container:Pods.xcodeproj">

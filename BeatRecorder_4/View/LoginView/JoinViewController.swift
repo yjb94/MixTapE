@@ -9,6 +9,30 @@
 import UIKit
 import Alamofire
 import Haneke
+// FIXME: comparison operators with optionals were removed from the Swift Standard Libary.
+// Consider refactoring the code to use the non-optional operators.
+fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l < r
+  case (nil, _?):
+    return true
+  default:
+    return false
+  }
+}
+
+// FIXME: comparison operators with optionals were removed from the Swift Standard Libary.
+// Consider refactoring the code to use the non-optional operators.
+fileprivate func >= <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l >= r
+  default:
+    return !(lhs < rhs)
+  }
+}
+
 
 class JoinViewController: UIViewController
 {
@@ -32,36 +56,36 @@ class JoinViewController: UIViewController
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    @IBAction func onClose(sender: AnyObject)
+    @IBAction func onClose(_ sender: AnyObject)
     {
-        self.dismissViewControllerAnimated(true, completion: {});
+        self.dismiss(animated: true, completion: {});
     }
     
-    @IBAction func onJoinButtonClicked(sender:AnyObject)
+    @IBAction func onJoinButtonClicked(_ sender:AnyObject)
     {
         if(!checkJoinError())  //no error
         {
             let params:[String : AnyObject] = [
-                "email": email_textfield.text!,
-                "password":password_textfield.text!
+                "email": email_textfield.text! as AnyObject,
+                "password":password_textfield.text! as AnyObject
             ]
             
-            Alamofire.request(.POST, SERVER_URL+"api/user/", parameters:params , encoding: ParameterEncoding.JSON).responseJSON { response in
+            Alamofire.request(SERVER_URL+"api/user/", method: HTTPMethod.post, parameters: params, encoding: JSONEncoding.default).responseJSON { response in
                 HUDController.sharedInstance.dismiss()
                 switch response.result
                 {
-                case .Success:
+                case .success:
                     //save json datas
                     if let JSON = response.result.value
                     {
                         let dict:NSMutableDictionary = JSON as! NSMutableDictionary
-                        USER_DATA.user = Artist(seq: dict["sequence"] as! Int, name: String(dict["nickname"]!), profile_url: String(dict["profile_url"]!), thumbnail_url: String(dict["thumbnail_url"]!), email: String(dict["email"]!), password: String(dict["password"]!))
+                        USER_DATA.user = Artist(seq: dict["sequence"] as! Int, name: dict["nickname"]! as! String, profile_url: dict["profile_url"]! as! String, thumbnail_url: dict["thumbnail_url"]! as! String, email: dict["email"]! as! String, password: dict["password"]! as! String)
                         
                         //load music chart, artist chart, beat chart
-                        self.performSegueWithIdentifier("mainTabBarView", sender: self)
+                        self.performSegue(withIdentifier: "mainTabBarView", sender: self)
                     }
                     
-                case .Failure( _):
+                case .failure( _):
                     print(response.result.description)
                     //                        self.performSegueWithIdentifier("showJoinView", sender: self)
                 }

@@ -29,31 +29,31 @@ class CHART_DATA
     static var artist_list:Chart = Chart(chart_type: 1)
     static var mixtape_list:Chart = Chart(chart_type: 2)
     
-    class func loadMixtape(callback:(setted_cnt:Int)->Void)
+    class func loadMixtape(_ callback:@escaping (_ setted_cnt:Int)->Void)
     {
-        Shared.JSONCache.fetch(URL: NSURL(string: SERVER_URL + "api/mixtape")!).onSuccess { JSON in
+        Shared.JSONCache.fetch(URL: URL(string: SERVER_URL + "api/mixtape")!).onSuccess { JSON in
             let mixtape_list = JSON.array
-            for i in mixtape_list
+            for i in mixtape_list!
             {
                 let mixtape = Mixtape()
                 mixtape.readFromDictionary(i as! NSDictionary)
-                Shared.JSONCache.fetch(URL: NSURL(string: SERVER_URL + "api/audio/" + mixtape.audio_info)!).onSuccess { AUDIO_INFO in
-                    let dict = AUDIO_INFO.dictionary
+                Shared.JSONCache.fetch(URL: URL(string: SERVER_URL + "api/audio/" + mixtape.audio_info)!).onSuccess { AUDIO_INFO in
+                    let dict = AUDIO_INFO.dictionary as! NSDictionary
                     mixtape.readAfter(dict)
                     self.mixtape_list.addAudio(mixtape)
                 }
             }
             
             setted_cnt += 1
-            callback(setted_cnt: setted_cnt)
+            callback(setted_cnt)
         }
     }
     
-    class func loadBeat(callback:(setted_cnt:Int)->Void)
+    class func loadBeat(_ callback:@escaping (_ setted_cnt:Int)->Void)
     {
-        Shared.JSONCache.fetch(URL: NSURL(string: SERVER_URL + "api/beat")!).onSuccess { JSON in
+        Shared.JSONCache.fetch(URL: URL(string: SERVER_URL + "api/beat")!).onSuccess { JSON in
             let beat_list = JSON.array
-            for i in beat_list
+            for i in beat_list!
             {
                 let dict:NSDictionary = i as! NSDictionary
                 let beat = Beat()
@@ -62,14 +62,14 @@ class CHART_DATA
             }
             
             setted_cnt += 1
-            callback(setted_cnt: setted_cnt)
+            callback(setted_cnt)
         }
     }
-    class func loadArtist(callback:(setted_cnt:Int)->Void)
+    class func loadArtist(_ callback:@escaping (_ setted_cnt:Int)->Void)
     {
-        Shared.JSONCache.fetch(URL: NSURL(string: SERVER_URL + "api/user/?all=1")!).onSuccess { JSON in
+        Shared.JSONCache.fetch(URL: URL(string: SERVER_URL + "api/user/?all=1")!).onSuccess { JSON in
             let artist_list = JSON.array
-            for i in artist_list
+            for i in artist_list!
             {
                 let dict:NSDictionary = i as! NSDictionary
                 let artist = Artist()
@@ -78,7 +78,7 @@ class CHART_DATA
             }
             
             setted_cnt += 1
-            callback(setted_cnt: setted_cnt)
+            callback(setted_cnt)
         }
     }
 }

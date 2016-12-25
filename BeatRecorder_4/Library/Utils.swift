@@ -11,9 +11,9 @@ import UIKit
 
 class Utils
 {
-    class func cropToBounds(image: UIImage, width: CGFloat, height: CGFloat) -> UIImage {
+    class func cropToBounds(_ image: UIImage, width: CGFloat, height: CGFloat) -> UIImage {
         
-        let contextImage: UIImage = UIImage(CGImage: image.CGImage!)
+        let contextImage: UIImage = UIImage(cgImage: image.cgImage!)
         
         let contextSize: CGSize = contextImage.size
         
@@ -43,32 +43,32 @@ class Utils
         cgwidth = contextSize.width * ratio
         cgheight = contextSize.height * ratio
         
-        let rect: CGRect = CGRectMake(posX, posY, cgwidth, cgheight)
+        let rect: CGRect = CGRect(x: posX, y: posY, width: cgwidth, height: cgheight)
         
         // Create bitmap image from context using the rect
-        let imageRef: CGImageRef = CGImageCreateWithImageInRect(contextImage.CGImage, rect)!
+        let imageRef: CGImage = contextImage.cgImage!.cropping(to: rect)!
         
         // Create a new image based on the imageRef and rotate back to the original orientation
-        let image: UIImage = UIImage(CGImage: imageRef)
+        let image: UIImage = UIImage(cgImage: imageRef)
         
         return image
     }
     
-    class func isValidEmail(testStr:String) -> Bool
+    class func isValidEmail(_ testStr:String) -> Bool
     {
         let emailRegEx = "^(?:(?:(?:(?: )*(?:(?:(?:\\t| )*\\r\\n)?(?:\\t| )+))+(?: )*)|(?: )+)?(?:(?:(?:[-A-Za-z0-9!#$%&’*+/=?^_'{|}~]+(?:\\.[-A-Za-z0-9!#$%&’*+/=?^_'{|}~]+)*)|(?:\"(?:(?:(?:(?: )*(?:(?:[!#-Z^-~]|\\[|\\])|(?:\\\\(?:\\t|[ -~]))))+(?: )*)|(?: )+)\"))(?:@)(?:(?:(?:[A-Za-z0-9](?:[-A-Za-z0-9]{0,61}[A-Za-z0-9])?)(?:\\.[A-Za-z0-9](?:[-A-Za-z0-9]{0,61}[A-Za-z0-9])?)*)|(?:\\[(?:(?:(?:(?:(?:[0-9]|(?:[1-9][0-9])|(?:1[0-9][0-9])|(?:2[0-4][0-9])|(?:25[0-5]))\\.){3}(?:[0-9]|(?:[1-9][0-9])|(?:1[0-9][0-9])|(?:2[0-4][0-9])|(?:25[0-5]))))|(?:(?:(?: )*[!-Z^-~])*(?: )*)|(?:[Vv][0-9A-Fa-f]+\\.[-A-Za-z0-9._~!$&'()*+,;=:]+))\\])))(?:(?:(?:(?: )*(?:(?:(?:\\t| )*\\r\\n)?(?:\\t| )+))+(?: )*)|(?: )+)?$"
         let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
-        let result = emailTest.evaluateWithObject(testStr)
+        let result = emailTest.evaluate(with: testStr)
         return result
     }
     
-    class func dictToJSONString(dict:NSDictionary) -> String
+    class func dictToJSONString(_ dict:NSDictionary) -> String
     {
         do
         {
-            let jsonData = try NSJSONSerialization.dataWithJSONObject(dict , options: NSJSONWritingOptions.PrettyPrinted)
+            let jsonData = try JSONSerialization.data(withJSONObject: dict , options: JSONSerialization.WritingOptions.prettyPrinted)
             
-            let jsonString = NSString(data: jsonData, encoding: NSUTF8StringEncoding)! as String
+            let jsonString = NSString(data: jsonData, encoding: String.Encoding.utf8.rawValue)! as String
             
             return jsonString
         }
@@ -79,10 +79,10 @@ class Utils
         return ""
     }
     
-    class func convertStringToDictionary(text: String) -> [String:AnyObject]? {
-        if let data = text.dataUsingEncoding(NSUTF8StringEncoding) {
+    class func convertStringToDictionary(_ text: String) -> [String:AnyObject]? {
+        if let data = text.data(using: String.Encoding.utf8) {
             do {
-                return try NSJSONSerialization.JSONObjectWithData(data, options: []) as? [String:AnyObject]
+                return try JSONSerialization.jsonObject(with: data, options: []) as? [String:AnyObject]
             } catch let error as NSError {
                 print(error)
             }
@@ -90,7 +90,7 @@ class Utils
         return nil
     }
     
-    class func secondToMMSS (seconds : Int) -> String
+    class func secondToMMSS (_ seconds : Int) -> String
     {
         let minutes = seconds / 60
         let second = (seconds % 60)
@@ -107,7 +107,7 @@ public extension UIDevice
         uname(&systemInfo)
         let machineMirror = Mirror(reflecting: systemInfo.machine)
         let identifier = machineMirror.children.reduce("") { identifier, element in
-            guard let value = element.value as? Int8 where value != 0 else { return identifier }
+            guard let value = element.value as? Int8, value != 0 else { return identifier }
             return identifier + String(UnicodeScalar(UInt8(value)))
         }
         
